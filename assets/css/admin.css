@@ -1,0 +1,134 @@
+/**
+ * Minimum admin settings styles.
+ *
+ * Modern, accessible, dark-mode aware. Motion is guarded by
+ * prefers-reduced-motion. No layout shift: the rules table reserves space.
+ */
+
+.minimum-settings {
+	--minimum-radius: 8px;
+	--minimum-border: #dcdcde;
+	--minimum-surface: #fff;
+	--minimum-muted: #646970;
+	--minimum-accent: #2271b1;
+	--minimum-accent-contrast: #fff;
+	--minimum-tip-bg: #1d2327;
+	--minimum-tip-fg: #fff;
+}
+
+.minimum-settings__lead {
+	max-width: 720px;
+	font-size: 14px;
+	color: var( --minimum-muted );
+}
+
+.minimum-section-title {
+	margin-top: 2em;
+	padding-top: 1em;
+	border-top: 1px solid var( --minimum-border );
+}
+
+.minimum-rules-intro {
+	max-width: 720px;
+}
+
+.minimum-rules-table {
+	max-width: 760px;
+	border-radius: var( --minimum-radius );
+	overflow: hidden;
+}
+
+.minimum-rules-table th,
+.minimum-rules-table td {
+	vertical-align: middle;
+}
+
+.minimum-empty {
+	max-width: 720px;
+	padding: 16px;
+	border: 1px dashed var( --minimum-border );
+	border-radius: var( --minimum-radius );
+	color: var( --minimum-muted );
+	background: rgba( 0, 0, 0, 0.02 );
+}
+
+.minimum-currency {
+	margin: 0 6px 0 4px;
+	color: var( --minimum-muted );
+	font-weight: 600;
+}
+
+.minimum-rule-target:disabled {
+	opacity: 0.5;
+}
+
+/* Inline help affordance + tooltip. */
+.minimum-help {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
+	margin-inline-start: 6px;
+	padding: 0;
+	border: 1px solid var( --minimum-border );
+	border-radius: 50%;
+	background: var( --minimum-surface );
+	color: var( --minimum-muted );
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 1;
+	cursor: help;
+	transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.minimum-help:hover,
+.minimum-help:focus-visible {
+	background: var( --minimum-accent );
+	border-color: var( --minimum-accent );
+	color: var( --minimum-accent-contrast );
+}
+
+.minimum-help:focus-visible {
+	outline: 2px solid var( --minimum-accent );
+	outline-offset: 2px;
+}
+
+.minimum-tip {
+	max-width: 280px;
+	margin: 0;
+	padding: 10px 12px;
+	border: 0;
+	border-radius: var( --minimum-radius );
+	background: var( --minimum-tip-bg );
+	color: var( --minimum-tip-fg );
+	font-size: 12px;
+	line-height: 1.5;
+	box-shadow: 0 6px 24px rgba( 0, 0, 0, 0.18 );
+}
+
+/* Fallback for browsers without the Popover API: keep tips out of flow. */
+.minimum-tip:not( :popover-open ) {
+	position: absolute;
+	left: -9999px;
+}
+
+@media ( prefers-color-scheme: dark ) {
+	.minimum-settings {
+		--minimum-border: #3c434a;
+		--minimum-surface: #1d2327;
+		--minimum-muted: #a7aaad;
+		--minimum-tip-bg: #f6f7f7;
+		--minimum-tip-fg: #1d2327;
+	}
+
+	.minimum-empty {
+		background: rgba( 255, 255, 255, 0.03 );
+	}
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+	.minimum-help {
+		transition: none;
+	}
+}
