@@ -113,6 +113,16 @@
 			tbody.appendChild( row );
 			reflectScope( row );
 			refreshEmptyState();
+			// Presentation-only: lay the gauge spine in, then drop the hook so
+			// a later re-add re-triggers it. Harmless if motion is reduced.
+			row.classList.add( 'is-new' );
+			row.addEventListener(
+				'animationend',
+				function () {
+					row.classList.remove( 'is-new' );
+				},
+				{ once: true }
+			);
 			var firstField = row.querySelector( 'select, input' );
 			if ( firstField ) {
 				firstField.focus();
