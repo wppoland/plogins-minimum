@@ -13,17 +13,17 @@
 
 .minimum-settings {
 	/* Grounded accent: the violet of the plugin's stepper icon, not default blue. */
-	--minimum-accent: #6d4aff;
+	--minimum-accent: #5f3aff;
 	--minimum-accent-strong: #5a36e0;
-	--minimum-accent-soft: rgba( 109, 74, 255, 0.12 );
-	--minimum-floor: #6d4aff;   /* min — the floor stop */
-	--minimum-ceiling: #b23a8c; /* max — the ceiling stop */
-	--minimum-step: #1f9d72;    /* step — the notch */
+	--minimum-accent-soft: rgba( 95, 58, 255, 0.12 );
+	--minimum-floor: #5f3aff;   /* min — the floor stop */
+	--minimum-ceiling: #aa3585; /* max — the ceiling stop */
+	--minimum-step: #0d7050;    /* step — the notch */
 	--minimum-radius: 10px;
 	--minimum-border: #dcdcde;
 	--minimum-muted: #646970;
 	--minimum-surface: #fff;
-	--minimum-track: rgba( 109, 74, 255, 0.16 );
+	--minimum-track: rgba( 95, 58, 255, 0.16 );
 }
 
 .minimum-settings__lead {
@@ -197,11 +197,11 @@
 		--minimum-border: #3c434a;
 		--minimum-muted: #a7aaad;
 		--minimum-surface: #1d2327;
-		--minimum-accent: #9d83ff;
+		--minimum-accent: #a991ff;
 		--minimum-accent-strong: #b9a6ff;
-		--minimum-accent-soft: rgba( 157, 131, 255, 0.18 );
-		--minimum-floor: #9d83ff;
-		--minimum-ceiling: #e06bb6;
+		--minimum-accent-soft: rgba( 169, 145, 255, 0.18 );
+		--minimum-floor: #a991ff;
+		--minimum-ceiling: #ea7ec3;
 		--minimum-step: #43c79a;
 	}
 
