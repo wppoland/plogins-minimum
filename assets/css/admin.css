@@ -159,6 +159,49 @@
 	font-weight: 600;
 }
 
+/* Caption reads as a quiet legend for the gauge panel, left-aligned like the
+ * data it describes. Muted text is AA on white (5.53:1). */
+.minimum-rules-caption {
+	max-width: 820px;
+	margin-bottom: 8px;
+	padding: 0 2px;
+	text-align: left;
+	caption-side: top;
+	font-size: 13px;
+	line-height: 1.5;
+	color: var( --minimum-muted );
+}
+
+/* Column headers carry a tooltip; show the affordance without shouting. */
+.minimum-rules-table thead abbr[title] {
+	text-decoration: none;
+	cursor: help;
+	border-bottom: 1px dotted currentColor;
+}
+
+/* Worked token example: the "after" half sits on the accent tint so it reads
+ * as the live, rendered result. Text on this tint is AA (accent-strong 5.74:1,
+ * muted 4.59:1 on #ece7ff). */
+.minimum-token-example {
+	max-width: 720px;
+}
+
+.minimum-token-example code {
+	background: rgba( 0, 0, 0, 0.04 );
+}
+
+.minimum-token-rendered {
+	background: var( --minimum-accent-soft );
+	color: var( --minimum-accent-strong );
+	font-style: normal;
+}
+
+@media ( prefers-color-scheme: dark ) {
+	.minimum-token-example code {
+		background: rgba( 255, 255, 255, 0.06 );
+	}
+}
+
 .minimum-rule-target:disabled {
 	opacity: 0.5;
 }
