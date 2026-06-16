@@ -227,7 +227,7 @@ final class Admin implements HasHooks {
 
 				<h2 class="minimum-section-title"><?php esc_html_e( 'Quantity rules', 'minimum' ); ?></h2>
 				<p class="description minimum-rules-intro">
-					<?php esc_html_e( 'Set a minimum, maximum and step quantity. A specific product rule overrides a category rule, which overrides a global rule. Leave a field at 0 to ignore that constraint.', 'minimum' ); ?>
+					<?php esc_html_e( 'Each rule sets a floor, a ceiling and a step for how many units a customer can buy. When several rules could apply, the most specific one wins: a product rule beats a category rule, which beats the global rule. Leave any field at 0 to ignore that constraint.', 'minimum' ); ?>
 				</p>
 
 				<div id="minimum-rules">
@@ -235,13 +235,16 @@ final class Admin implements HasHooks {
 						<?php esc_html_e( 'No rules yet. Add your first quantity rule below.', 'minimum' ); ?>
 					</p>
 					<table class="widefat minimum-rules-table"<?php echo array() === $rules ? ' hidden' : ''; ?>>
+						<caption class="minimum-rules-caption">
+							<?php esc_html_e( 'Floor (min), ceiling (max) and step apply per scope. To target a single product or a category, paste its numeric ID — open the product or category in the editor and read the post or term ID from the URL (the post= or tag_ID= number).', 'minimum' ); ?>
+						</caption>
 						<thead>
 							<tr>
-								<th scope="col"><?php esc_html_e( 'Scope', 'minimum' ); ?></th>
-								<th scope="col"><?php esc_html_e( 'Product / Category ID', 'minimum' ); ?></th>
-								<th scope="col"><?php esc_html_e( 'Min', 'minimum' ); ?></th>
-								<th scope="col"><?php esc_html_e( 'Max', 'minimum' ); ?></th>
-								<th scope="col"><?php esc_html_e( 'Step', 'minimum' ); ?></th>
+								<th scope="col"><abbr title="<?php esc_attr_e( 'Which products this rule covers: every product, one product, or a whole category.', 'minimum' ); ?>"><?php esc_html_e( 'Scope', 'minimum' ); ?></abbr></th>
+								<th scope="col"><abbr title="<?php esc_attr_e( 'The numeric ID of the product or category this rule targets. Ignored for the global scope.', 'minimum' ); ?>"><?php esc_html_e( 'Product / Category ID', 'minimum' ); ?></abbr></th>
+								<th scope="col"><abbr title="<?php esc_attr_e( 'Floor: customers must buy at least this many. 0 sets no floor.', 'minimum' ); ?>"><?php esc_html_e( 'Min', 'minimum' ); ?></abbr></th>
+								<th scope="col"><abbr title="<?php esc_attr_e( 'Ceiling: customers can buy at most this many. 0 sets no ceiling.', 'minimum' ); ?>"><?php esc_html_e( 'Max', 'minimum' ); ?></abbr></th>
+								<th scope="col"><abbr title="<?php esc_attr_e( 'Quantity must be a multiple of this number, e.g. 6 forces 6, 12, 18. 0 or 1 allows any amount.', 'minimum' ); ?>"><?php esc_html_e( 'Step', 'minimum' ); ?></abbr></th>
 								<th scope="col"><span class="screen-reader-text"><?php esc_html_e( 'Actions', 'minimum' ); ?></span></th>
 							</tr>
 						</thead>
@@ -260,7 +263,17 @@ final class Admin implements HasHooks {
 
 				<h2 class="minimum-section-title"><?php esc_html_e( 'Notice messages', 'minimum' ); ?></h2>
 				<p class="description">
-					<?php esc_html_e( 'Shown to customers when a rule is not met. Tokens are replaced automatically.', 'minimum' ); ?>
+					<?php esc_html_e( 'Shown to a customer when a rule is not met. Each {token} is swapped for the live value at checkout, so the message names the exact product and number.', 'minimum' ); ?>
+				</p>
+				<p class="description minimum-token-example">
+					<?php
+					printf(
+						/* translators: 1: template with tokens, 2: the same message after tokens are filled in. */
+						esc_html__( 'Example: %1$s becomes %2$s', 'minimum' ),
+						'<code>' . esc_html__( 'You must buy at least {min} of "{product}".', 'minimum' ) . '</code>',
+						'<code class="minimum-token-rendered">' . esc_html__( 'You must buy at least 6 of "Espresso Beans".', 'minimum' ) . '</code>',
+					);
+					?>
 				</p>
 
 				<table class="form-table" role="presentation">
