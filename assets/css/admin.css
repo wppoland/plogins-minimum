@@ -1,14 +1,29 @@
 /**
  * Minimum admin settings styles.
  *
+ * The plugin's job is bounds: a floor (min), a ceiling (max) and a notch (step)
+ * on a quantity line. The rules table is built to *read* like a gauge — each
+ * row is a bounded track between a floor stop and a ceiling stop, signed with
+ * the stepper motif from the plugin icon (− │ +).
+ *
+ * Themeable via --minimum-* tokens with WP-admin-inheriting fallbacks.
  * Modern, accessible, dark-mode aware. Motion is guarded by
  * prefers-reduced-motion. No layout shift: the rules table reserves space.
  */
 
 .minimum-settings {
-	--minimum-radius: 8px;
+	/* Grounded accent: the violet of the plugin's stepper icon, not default blue. */
+	--minimum-accent: #6d4aff;
+	--minimum-accent-strong: #5a36e0;
+	--minimum-accent-soft: rgba( 109, 74, 255, 0.12 );
+	--minimum-floor: #6d4aff;   /* min — the floor stop */
+	--minimum-ceiling: #b23a8c; /* max — the ceiling stop */
+	--minimum-step: #1f9d72;    /* step — the notch */
+	--minimum-radius: 10px;
 	--minimum-border: #dcdcde;
 	--minimum-muted: #646970;
+	--minimum-surface: #fff;
+	--minimum-track: rgba( 109, 74, 255, 0.16 );
 }
 
 .minimum-settings__lead {
@@ -17,26 +32,117 @@
 	color: var( --minimum-muted );
 }
 
+/* Section title carries the stepper signature: a − │ + ahead of the heading. */
 .minimum-section-title {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
 	margin-top: 2em;
 	padding-top: 1em;
 	border-top: 1px solid var( --minimum-border );
+}
+
+.minimum-section-title::before {
+	content: "";
+	flex: 0 0 auto;
+	width: 30px;
+	height: 16px;
+	border: 2px solid var( --minimum-accent );
+	border-radius: 5px;
+	/* − on the left, │ centre, + on the right — drawn with gradients. */
+	background:
+		linear-gradient( var( --minimum-accent ), var( --minimum-accent ) ) 7px 50% / 6px 2px no-repeat,
+		linear-gradient( var( --minimum-accent ), var( --minimum-accent ) ) 50% 50% / 2px 8px no-repeat,
+		linear-gradient( var( --minimum-accent ), var( --minimum-accent ) ) 21px 50% / 6px 2px no-repeat,
+		linear-gradient( var( --minimum-accent ), var( --minimum-accent ) ) 21px 50% / 2px 6px no-repeat;
+	opacity: 0.85;
 }
 
 .minimum-rules-intro {
 	max-width: 720px;
 }
 
+/* The rules table reads as a panel of gauges. */
 .minimum-rules-table {
-	max-width: 760px;
+	max-width: 820px;
+	border: 1px solid var( --minimum-border );
 	border-radius: var( --minimum-radius );
+	border-collapse: separate;
+	border-spacing: 0;
 	overflow: hidden;
+	background: var( --minimum-surface );
+}
+
+.minimum-rules-table thead th {
+	font-size: 11px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var( --minimum-muted );
+	background: var( --minimum-accent-soft );
+	border-bottom: 1px solid var( --minimum-border );
 }
 
 .minimum-rules-table th,
 .minimum-rules-table td {
 	vertical-align: middle;
+	padding: 12px 14px;
 }
+
+/* Each row is a bounded track: a left rail in the accent, like a gauge spine. */
+.minimum-rule-row {
+	position: relative;
+}
+
+.minimum-rule-row > td:first-child {
+	box-shadow: inset 3px 0 0 0 var( --minimum-accent );
+}
+
+.minimum-rule-row + .minimum-rule-row > td {
+	border-top: 1px solid var( --minimum-border );
+}
+
+/* Min / Max / Step inputs sit on a tinted "gauge cell" so the trio reads as
+ * one instrument: floor, ceiling, notch. */
+.minimum-rules-table td:nth-child( 3 ) input,
+.minimum-rules-table td:nth-child( 4 ) input,
+.minimum-rules-table td:nth-child( 5 ) input {
+	border-radius: 7px;
+}
+
+/* Colour-code the three bound fields by their role, with a tick marker above
+ * each so the header doubles as a gauge legend. ZERO layout shift: the marker
+ * is a pseudo-element that does not reflow the input. */
+.minimum-rules-table thead th:nth-child( 3 ),
+.minimum-rules-table thead th:nth-child( 4 ),
+.minimum-rules-table thead th:nth-child( 5 ) {
+	font-weight: 700;
+}
+
+.minimum-rules-table thead th:nth-child( 3 ) { color: var( --minimum-floor ); }
+.minimum-rules-table thead th:nth-child( 4 ) { color: var( --minimum-ceiling ); }
+.minimum-rules-table thead th:nth-child( 5 ) { color: var( --minimum-step ); }
+
+/* A tick dot ahead of each bound header so it reads as a gauge legend. */
+.minimum-rules-table thead th:nth-child( 3 )::before,
+.minimum-rules-table thead th:nth-child( 4 )::before,
+.minimum-rules-table thead th:nth-child( 5 )::before {
+	content: "";
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin-right: 5px;
+	border-radius: 50%;
+	vertical-align: middle;
+	background: currentColor;
+}
+
+.minimum-rules-table td:nth-child( 3 ) input:focus { outline-color: var( --minimum-floor ); }
+.minimum-rules-table td:nth-child( 4 ) input:focus { outline-color: var( --minimum-ceiling ); }
+.minimum-rules-table td:nth-child( 5 ) input:focus { outline-color: var( --minimum-step ); }
+
+.minimum-rules-table td:nth-child( 3 ) input { box-shadow: inset 0 -2px 0 0 var( --minimum-floor ); }
+.minimum-rules-table td:nth-child( 4 ) input { box-shadow: inset 0 -2px 0 0 var( --minimum-ceiling ); }
+.minimum-rules-table td:nth-child( 5 ) input { box-shadow: inset 0 -2px 0 0 var( --minimum-step ); }
 
 .minimum-empty {
 	max-width: 720px;
@@ -57,10 +163,46 @@
 	opacity: 0.5;
 }
 
+/* Add-rule button echoes the accent. */
+#minimum-add-rule {
+	border-color: var( --minimum-accent );
+	color: var( --minimum-accent-strong );
+}
+
+#minimum-add-rule:hover,
+#minimum-add-rule:focus {
+	background: var( --minimum-accent-soft );
+	border-color: var( --minimum-accent-strong );
+}
+
+/* THE earned micro-interaction: a freshly added row lays its gauge spine in
+ * from the top, like a measuring stop snapping into place. Presentation only. */
+.minimum-rule-row.is-new > td:first-child {
+	animation: minimum-gauge-set 360ms ease-out;
+}
+
+@keyframes minimum-gauge-set {
+	from { box-shadow: inset 3px -100% 0 0 var( --minimum-accent ); }
+	to   { box-shadow: inset 3px 0 0 0 var( --minimum-accent ); }
+}
+
+@media ( prefers-reduced-motion: reduce ) {
+	.minimum-rule-row.is-new > td:first-child {
+		animation: none;
+	}
+}
+
 @media ( prefers-color-scheme: dark ) {
 	.minimum-settings {
 		--minimum-border: #3c434a;
 		--minimum-muted: #a7aaad;
+		--minimum-surface: #1d2327;
+		--minimum-accent: #9d83ff;
+		--minimum-accent-strong: #b9a6ff;
+		--minimum-accent-soft: rgba( 157, 131, 255, 0.18 );
+		--minimum-floor: #9d83ff;
+		--minimum-ceiling: #e06bb6;
+		--minimum-step: #43c79a;
 	}
 
 	.minimum-empty {
