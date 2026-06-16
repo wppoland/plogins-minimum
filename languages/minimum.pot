@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-14T21:55:50+00:00\n"
+"POT-Creation-Date: 2026-06-16T20:24:08+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: minimum\n"
@@ -56,7 +56,7 @@ msgid "Minimum"
 msgstr ""
 
 #: src/Rules/Admin.php:142
-#: src/Rules/Admin.php:339
+#: src/Rules/Admin.php:352
 msgid "Remove"
 msgstr ""
 
@@ -65,22 +65,22 @@ msgid "Target ID"
 msgstr ""
 
 #: src/Rules/Admin.php:144
-#: src/Rules/Admin.php:240
+#: src/Rules/Admin.php:243
 msgid "Scope"
 msgstr ""
 
 #: src/Rules/Admin.php:145
-#: src/Rules/Admin.php:242
+#: src/Rules/Admin.php:245
 msgid "Min"
 msgstr ""
 
 #: src/Rules/Admin.php:146
-#: src/Rules/Admin.php:243
+#: src/Rules/Admin.php:246
 msgid "Max"
 msgstr ""
 
 #: src/Rules/Admin.php:147
-#: src/Rules/Admin.php:244
+#: src/Rules/Admin.php:247
 msgid "Step"
 msgstr ""
 
@@ -125,77 +125,112 @@ msgid "Quantity rules"
 msgstr ""
 
 #: src/Rules/Admin.php:230
-msgid "Set a minimum, maximum and step quantity. A specific product rule overrides a category rule, which overrides a global rule. Leave a field at 0 to ignore that constraint."
+msgid "Each rule sets a floor, a ceiling and a step for how many units a customer can buy. When several rules could apply, the most specific one wins: a product rule beats a category rule, which beats the global rule. Leave any field at 0 to ignore that constraint."
 msgstr ""
 
 #: src/Rules/Admin.php:235
 msgid "No rules yet. Add your first quantity rule below."
 msgstr ""
 
-#: src/Rules/Admin.php:241
+#: src/Rules/Admin.php:239
+msgid "Floor (min), ceiling (max) and step apply per scope. To target a single product or a category, paste its numeric ID — open the product or category in the editor and read the post or term ID from the URL (the post= or tag_ID= number)."
+msgstr ""
+
+#: src/Rules/Admin.php:243
+msgid "Which products this rule covers: every product, one product, or a whole category."
+msgstr ""
+
+#: src/Rules/Admin.php:244
+msgid "The numeric ID of the product or category this rule targets. Ignored for the global scope."
+msgstr ""
+
+#: src/Rules/Admin.php:244
 msgid "Product / Category ID"
 msgstr ""
 
 #: src/Rules/Admin.php:245
+msgid "Floor: customers must buy at least this many. 0 sets no floor."
+msgstr ""
+
+#: src/Rules/Admin.php:246
+msgid "Ceiling: customers can buy at most this many. 0 sets no ceiling."
+msgstr ""
+
+#: src/Rules/Admin.php:247
+msgid "Quantity must be a multiple of this number, e.g. 6 forces 6, 12, 18. 0 or 1 allows any amount."
+msgstr ""
+
+#: src/Rules/Admin.php:248
 msgid "Actions"
 msgstr ""
 
-#: src/Rules/Admin.php:256
+#: src/Rules/Admin.php:259
 msgid "+ Add rule"
 msgstr ""
 
-#: src/Rules/Admin.php:261
+#: src/Rules/Admin.php:264
 msgid "Notice messages"
 msgstr ""
 
-#: src/Rules/Admin.php:263
-msgid "Shown to customers when a rule is not met. Tokens are replaced automatically."
+#: src/Rules/Admin.php:266
+msgid "Shown to a customer when a rule is not met. Each {token} is swapped for the live value at checkout, so the message names the exact product and number."
 msgstr ""
 
-#: src/Rules/Admin.php:269
+#. translators: 1: template with tokens, 2: the same message after tokens are filled in.
+#: src/Rules/Admin.php:272
+#, php-format
+msgid "Example: %1$s becomes %2$s"
+msgstr ""
+
+#: src/Rules/Admin.php:273
+#: src/Rules/Settings.php:53
+msgid "You must buy at least {min} of \"{product}\"."
+msgstr ""
+
+#: src/Rules/Admin.php:274
+msgid "You must buy at least 6 of \"Espresso Beans\"."
+msgstr ""
+
+#: src/Rules/Admin.php:282
 msgid "Below minimum quantity"
 msgstr ""
 
-#: src/Rules/Admin.php:270
+#: src/Rules/Admin.php:283
 msgid "Above maximum quantity"
 msgstr ""
 
-#: src/Rules/Admin.php:271
+#: src/Rules/Admin.php:284
 msgid "Invalid step quantity"
 msgstr ""
 
-#: src/Rules/Admin.php:272
+#: src/Rules/Admin.php:285
 msgid "Below minimum order total"
 msgstr ""
 
-#: src/Rules/Admin.php:298
+#: src/Rules/Admin.php:311
 msgid "Rule scope"
 msgstr ""
 
-#: src/Rules/Admin.php:315
+#: src/Rules/Admin.php:328
 msgid "Target product or category ID"
 msgstr ""
 
-#: src/Rules/Admin.php:323
+#: src/Rules/Admin.php:336
 msgid "Minimum quantity"
 msgstr ""
 
-#: src/Rules/Admin.php:329
+#: src/Rules/Admin.php:342
 msgid "Maximum quantity"
 msgstr ""
 
-#: src/Rules/Admin.php:335
+#: src/Rules/Admin.php:348
 msgid "Step quantity"
 msgstr ""
 
 #. translators: %s: list of available replacement tokens.
-#: src/Rules/Admin.php:373
+#: src/Rules/Admin.php:386
 #, php-format
 msgid "Available tokens: %s"
-msgstr ""
-
-#: src/Rules/Settings.php:53
-msgid "You must buy at least {min} of \"{product}\"."
 msgstr ""
 
 #: src/Rules/Settings.php:54
