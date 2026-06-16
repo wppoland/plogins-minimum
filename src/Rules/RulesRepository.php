@@ -83,7 +83,23 @@ final class RulesRepository {
 			}
 		}
 
-		return $effective;
+		/**
+		 * Filters the resolved min/max/step constraints for a product.
+		 *
+		 * Add-ons (e.g. Minimum Pro) use this to layer per-product overrides on
+		 * top of the global/category/product rules resolved above. Returned
+		 * values must keep the array{min: int, max: int, step: int} shape.
+		 *
+		 * @param array{min: int, max: int, step: int} $effective  Resolved constraints.
+		 * @param int                                  $product_id Product or variation ID.
+		 */
+		$filtered = apply_filters( 'minimum/product_constraints', $effective, $product_id );
+
+		return array(
+			'min'  => isset( $filtered['min'] ) ? (int) $filtered['min'] : $effective['min'],
+			'max'  => isset( $filtered['max'] ) ? (int) $filtered['max'] : $effective['max'],
+			'step' => isset( $filtered['step'] ) ? (int) $filtered['step'] : $effective['step'],
+		);
 	}
 
 	/**

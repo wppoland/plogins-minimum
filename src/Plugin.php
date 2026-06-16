@@ -111,5 +111,15 @@ final class Plugin {
 				$service->registerHooks();
 			}
 		}
+
+		/**
+		 * Fires after the plugin has fully booted and all services are registered.
+		 *
+		 * Add-ons (e.g. Minimum Pro) listen for this to extend the shared
+		 * container and register their own hooks.
+		 *
+		 * @param Plugin $plugin The booted plugin instance.
+		 */
+		do_action( 'minimum/booted', $this );
 	}
 }
