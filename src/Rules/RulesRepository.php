@@ -114,6 +114,13 @@ final class RulesRepository {
 		switch ( $rule['scope'] ) {
 			case 'global':
 				return true;
+			case 'role':
+				$role = sanitize_key( (string) ( $rule['role'] ?? '' ) );
+				if ( '' === $role ) {
+					return false;
+				}
+
+				return in_array( $role, $this->current_role_slugs(), true );
 			case 'product':
 				return $rule['target'] === $product_id || ( $parent_id > 0 && $rule['target'] === $parent_id );
 			case 'category':
@@ -132,8 +139,29 @@ final class RulesRepository {
 		return match ( $scope ) {
 			'product'  => 3,
 			'category' => 2,
+			'role'     => 2,
 			default    => 1,
 		};
+	}
+
+	/**
+	 * Role slugs for the current visitor (`guest` when logged out).
+	 *
+	 * @return array<int, string>
+	 */
+	private function current_role_slugs(): array {
+		if ( ! is_user_logged_in() ) {
+			return array( 'guest' );
+		}
+
+		$user  = wp_get_current_user();
+		$roles = array_values(
+			array_filter(
+				array_map( 'sanitize_key', (array) $user->roles )
+			)
+		);
+
+		return array() !== $roles ? $roles : array( 'guest' );
 	}
 
 	/**

@@ -27,8 +27,9 @@ defined( 'ABSPATH' ) || exit;
  *  - msg_min_total      string Notice for under-minimum order total. Tokens: {min} {total}.
  *
  * Each rule row:
- *  - scope    string 'global' | 'product' | 'category'
- *  - target   int    Product ID or term ID (0 for global)
+ *  - scope    string 'global' | 'product' | 'category' | 'role'
+ *  - target   int    Product ID or term ID (0 for global/role)
+ *  - role     string Role slug when scope is `role` (`guest` for visitors)
  *  - min      int    Minimum quantity (0 = no minimum)
  *  - max      int    Maximum quantity (0 = no maximum)
  *  - step     int    Quantity must be a multiple of this (0/1 = no step)
@@ -38,7 +39,7 @@ final class Settings {
 	public const OPTION = 'minimum_settings';
 
 	/** Allowed rule scopes. */
-	public const SCOPES = array( 'global', 'product', 'category' );
+	public const SCOPES = array( 'global', 'product', 'category', 'role' );
 
 	/**
 	 * Default settings used on first install and as a fallback.
@@ -82,7 +83,14 @@ final class Settings {
 	 * Minimum required order total (0 = disabled).
 	 */
 	public function min_order_total(): float {
-		return (float) $this->all()['min_order_total'];
+		$minimum = (float) $this->all()['min_order_total'];
+
+		/**
+		 * Filters the minimum order total required before checkout.
+		 *
+		 * @param float $minimum Minimum cart subtotal (0 = disabled).
+		 */
+		return (float) apply_filters( 'minimum/min_order_total', $minimum );
 	}
 
 	/**
@@ -102,7 +110,16 @@ final class Settings {
 			}
 		}
 
-		return $out;
+		/**
+		 * Filters the resolved quantity rule rows before they are matched to products.
+		 *
+		 * Add-ons (e.g. Minimum Pro) use this to inject per-role rules. Each row must
+		 * use the array{scope: string, target: int, min: int, max: int, step: int}
+		 * shape. Use scope `role`, `role` = role slug (`guest` for visitors).
+		 *
+		 * @param array<int, array{scope: string, target: int, min: int, max: int, step: int}> $out Rule rows.
+		 */
+		return apply_filters( 'minimum/rules', $out );
 	}
 
 	/**
@@ -166,6 +183,11 @@ final class Settings {
 		$scope = sanitize_key( (string) ( $rule['scope'] ?? 'global' ) );
 		if ( ! in_array( $scope, self::SCOPES, true ) ) {
 			$scope = 'global';
+		}
+
+		// Role rules are injected by add-ons via minimum/rules, not the FREE settings UI.
+		if ( 'role' === $scope ) {
+			return null;
 		}
 
 		$target = 'global' === $scope ? 0 : absint( $rule['target'] ?? 0 );

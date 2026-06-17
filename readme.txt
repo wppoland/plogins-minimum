@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 0.1.0
+Stable tag: 0.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -72,6 +72,10 @@ The uninstall step deletes the `minimum_settings` and `minimum_db_version` optio
 Minimum does not connect to any external services. Rules are evaluated against the cart on your own server, and the only data stored is two WordPress options, `minimum_settings` (your rules and notice wording) and `minimum_db_version`. The plugin sends no email and creates no custom database tables.
 
 == Changelog ==
+
+= 0.1.1 =
+* Extension filters `minimum/rules` and `minimum/min_order_total` for add-ons such as Minimum Pro role rules.
+* Role scope support in the rules engine (`role` slug on rule rows).
 
 = 0.1.0 =
 * Initial release. Per-product, per-category and global quantity rules (min, max, step), a minimum order total, and editable notice messages. Enforced on add-to-cart and at the cart and checkout. Compatible with HPOS and the Cart and Checkout blocks. No jQuery on the settings screen.
