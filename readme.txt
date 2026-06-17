@@ -67,6 +67,10 @@ The uninstall step deletes the `minimum_settings` and `minimum_db_version` optio
 
 1. The Minimum settings screen — rules builder (scope, min, max, step), minimum order total and customisable notice messages.
 
+== External Services ==
+
+Minimum does not connect to any external services. Rules are evaluated against the cart on your own server, and the only data stored is two WordPress options, `minimum_settings` (your rules and notice wording) and `minimum_db_version`. The plugin sends no email and creates no custom database tables.
+
 == Changelog ==
 
 = 0.1.0 =
