@@ -1,5 +1,5 @@
 === Minimum - Order Quantity Rules for WooCommerce ===
-Contributors: wppoland
+Contributors: motylanogha
 Tags: woocommerce, minimum order, quantity, order rules, minimum quantity
 Requires at least: 6.5
 Tested up to: 7.0
