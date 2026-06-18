@@ -45,6 +45,15 @@ Other things worth knowing:
 
 == Frequently Asked Questions ==
 
+= Documentation and links =
+
+* **Documentation** - https://plogins.com/minimum/docs/
+* **Plugin page** - https://plogins.com/minimum/
+* **Source code** - https://github.com/wppoland/minimum
+* **Bug reports and feature requests** - https://github.com/wppoland/minimum/issues
+* **Discussions and questions** - https://github.com/wppoland/minimum/discussions
+
+
 = Does it need WooCommerce? =
 Yes. Minimum is a WooCommerce extension and needs WooCommerce 8.0 or later active. If WooCommerce is missing, the plugin stays dormant and shows an admin notice.
 
