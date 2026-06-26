@@ -74,7 +74,7 @@ The uninstall step deletes the `minimum_settings` and `minimum_db_version` optio
 
 == Screenshots ==
 
-1. The Minimum settings screen — rules builder (scope, min, max, step), minimum order total and customisable notice messages.
+1. The Minimum settings screen: rules builder (scope, min, max, step), minimum order total and customisable notice messages.
 
 == External Services ==
 
