@@ -133,7 +133,7 @@ msgid "No rules yet. Add your first quantity rule below."
 msgstr ""
 
 #: src/Rules/Admin.php:239
-msgid "Floor (min), ceiling (max) and step apply per scope. To target a single product or a category, paste its numeric ID — open the product or category in the editor and read the post or term ID from the URL (the post= or tag_ID= number)."
+msgid "Floor (min), ceiling (max) and step apply per scope. To target a single product or a category, paste its numeric ID, open the product or category in the editor and read the post or term ID from the URL (the post= or tag_ID= number)."
 msgstr ""
 
 #: src/Rules/Admin.php:243

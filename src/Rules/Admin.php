@@ -236,7 +236,7 @@ final class Admin implements HasHooks {
 					</p>
 					<table class="widefat minimum-rules-table"<?php echo array() === $rules ? ' hidden' : ''; ?>>
 						<caption class="minimum-rules-caption">
-							<?php esc_html_e( 'Floor (min), ceiling (max) and step apply per scope. To target a single product or a category, paste its numeric ID — open the product or category in the editor and read the post or term ID from the URL (the post= or tag_ID= number).', 'minimum' ); ?>
+							<?php esc_html_e( 'Floor (min), ceiling (max) and step apply per scope. To target a single product or a category, paste its numeric ID, open the product or category in the editor and read the post or term ID from the URL (the post= or tag_ID= number).', 'minimum' ); ?>
 						</caption>
 						<thead>
 							<tr>
