@@ -1,11 +1,11 @@
-=== Minimum - Order Quantity Rules for WooCommerce ===
+=== Plogins Minimum for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, minimum order, quantity, order rules, minimum quantity
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 0.1.1
+Stable tag: 0.1.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,7 +17,7 @@ Minimum adds quantity and spend rules to your WooCommerce store. You decide how 
 
 The plugin checks the cart when an item is added and again at checkout. If a rule is not met, the customer sees a notice explaining what to change, and checkout stays blocked until it is fixed.
 
-Source code and bug reports live on GitHub: https://github.com/wppoland/minimum
+Source code and bug reports live on GitHub: https://github.com/wppoland/plogins-minimum
 
 What you can set up:
 
@@ -39,7 +39,7 @@ Other things worth knowing:
 == Installation ==
 
 1. Install and activate WooCommerce 8.0 or later.
-2. Upload the `minimum` folder to `/wp-content/plugins/`, or install the zip from the **Plugins → Add New → Upload Plugin** screen.
+2. Upload the `plogins-minimum` folder to `/wp-content/plugins/`, or install the zip from the **Plugins → Add New → Upload Plugin** screen.
 3. Activate the plugin through the **Plugins** screen.
 4. Go to **WooCommerce → Minimum** and add a rule (for example, a product with a minimum quantity of 3), or set a minimum order total.
 
@@ -47,11 +47,10 @@ Other things worth knowing:
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/minimum/docs/
-* **Plugin page** - https://plogins.com/minimum/
-* **Source code** - https://github.com/wppoland/minimum
-* **Bug reports and feature requests** - https://github.com/wppoland/minimum/issues
-* **Discussions and questions** - https://github.com/wppoland/minimum/discussions
+* **Documentation** - https://plogins.com/plogins-minimum/docs/
+* **Plugin page** - https://plogins.com/plogins-minimum/
+* **Source code** - https://github.com/wppoland/plogins-minimum
+* **Bug reports and feature requests** - https://github.com/wppoland/plogins-minimum/issues
 
 
 = Does it need WooCommerce? =
@@ -81,6 +80,9 @@ The uninstall step deletes the `minimum_settings` and `minimum_db_version` optio
 Minimum does not connect to any external services. Rules are evaluated against the cart on your own server, and the only data stored is two WordPress options, `minimum_settings` (your rules and notice wording) and `minimum_db_version`. The plugin sends no email and creates no custom database tables.
 
 == Changelog ==
+
+= 0.1.2 =
+* Renamed to Plogins Minimum for WooCommerce for a more distinctive plugin name.
 
 = 0.1.1 =
 * Extension filters `minimum/rules` and `minimum/min_order_total` for add-ons such as Minimum Pro role rules.

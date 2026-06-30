@@ -2,7 +2,7 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Minimum - Order Quantity Rules for WooCommerce 0.1.0\n"
+"Project-Id-Version: Plogins Minimum for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/minimum\n"
 "POT-Creation-Date: 2026-06-16T20:24:08+00:00\n"
 "PO-Revision-Date: 2026-06-15 00:00+0000\n"
@@ -15,20 +15,20 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
 "|| n%100>14) ? 1 : 2);\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: minimum\n"
+"X-Domain: plogins-minimum\n"
 
 #. Plugin Name of the plugin
-#: minimum.php
+#: plogins-minimum.php
 msgid "Minimum - Order Quantity Rules for WooCommerce"
 msgstr "Minimum - Reguły ilości zamówień dla WooCommerce"
 
 #. Plugin URI of the plugin
-#: minimum.php
+#: plogins-minimum.php
 msgid "https://plogins.com/minimum/"
 msgstr "https://plogins.com/minimum/"
 
 #. Description of the plugin
-#: minimum.php
+#: plogins-minimum.php
 msgid ""
 "Set minimum and maximum quantity and order-total rules, enforced at cart and "
 "checkout."
@@ -37,16 +37,16 @@ msgstr ""
 "egzekwowane w koszyku i przy zamówieniu."
 
 #. Author of the plugin
-#: minimum.php
+#: plogins-minimum.php
 msgid "WPPoland"
 msgstr "WPPoland"
 
 #. Author URI of the plugin
-#: minimum.php
+#: plogins-minimum.php
 msgid "https://plogins.com/"
 msgstr "https://plogins.com/"
 
-#: minimum.php:55
+#: plogins-minimum.php:55
 msgid ""
 "Minimum - Order Quantity Rules for WooCommerce requires WooCommerce to be "
 "active."

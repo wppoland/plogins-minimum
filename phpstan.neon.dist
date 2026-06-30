@@ -4,7 +4,7 @@ includes:
 parameters:
     level: 6
     paths:
-        - minimum.php
+        - plogins-minimum.php
         - uninstall.php
         - autoload.php
         - src

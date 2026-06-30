@@ -51,10 +51,10 @@ final class Settings {
 			'enabled'         => true,
 			'rules'           => array(),
 			'min_order_total' => 0.0,
-			'msg_min_qty'     => __( 'You must buy at least {min} of "{product}".', 'minimum' ),
-			'msg_max_qty'     => __( 'You can buy at most {max} of "{product}".', 'minimum' ),
-			'msg_step_qty'    => __( '"{product}" must be bought in multiples of {step}.', 'minimum' ),
-			'msg_min_total'   => __( 'Your order total must be at least {min} (currently {total}).', 'minimum' ),
+			'msg_min_qty'     => __( 'You must buy at least {min} of "{product}".', 'plogins-minimum' ),
+			'msg_max_qty'     => __( 'You can buy at most {max} of "{product}".', 'plogins-minimum' ),
+			'msg_step_qty'    => __( '"{product}" must be bought in multiples of {step}.', 'plogins-minimum' ),
+			'msg_min_total'   => __( 'Your order total must be at least {min} (currently {total}).', 'plogins-minimum' ),
 		);
 	}
 
