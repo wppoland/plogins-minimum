@@ -78,8 +78,9 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 == Screenshots ==
 
-1. The Minimum settings screen: rules builder (scope, min, max, step), minimum order total and customisable notice messages.
-
+1. On the storefront.
+2. Settings in the WordPress admin.
+3. On a mobile device.
 == External Services ==
 
 Minimum does not connect to any external services. Rules are evaluated against the cart on your own server, and the only data stored is two WordPress options, `minimum_settings` (your rules and notice wording) and `minimum_db_version`. The plugin sends no email and creates no custom database tables.
