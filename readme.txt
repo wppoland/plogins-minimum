@@ -71,6 +71,11 @@ Yes. The Enforcement switch on the settings screen stops rules being applied at 
 = What is left behind when I delete the plugin? =
 The uninstall step deletes the `minimum_settings` and `minimum_db_version` options. There are no custom tables, so nothing else is added to or left in your database.
 
+
+= Does this plugin work on WordPress Multisite? =
+
+Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data.
+
 == Screenshots ==
 
 1. The Minimum settings screen: rules builder (scope, min, max, step), minimum order total and customisable notice messages.
