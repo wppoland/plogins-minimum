@@ -11,6 +11,12 @@ namespace {
     if (! defined('ABSPATH')) {
         define('ABSPATH', '/tmp/wordpress/');
     }
+    if (! defined('MINIMUM_DIR')) {
+        define('MINIMUM_DIR', '/tmp/minimum/');
+    }
+    if (! defined('MINIMUM_URL')) {
+        define('MINIMUM_URL', 'https://example.test/wp-content/plugins/minimum/');
+    }
 }
 
 namespace Minimum {
