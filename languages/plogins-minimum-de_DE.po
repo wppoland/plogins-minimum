@@ -5,26 +5,26 @@ msgstr ""
 "Project-Id-Version: Plogins Minimum for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/minimum\n"
 "POT-Creation-Date: 2026-06-16T20:24:08+00:00\n"
-"PO-Revision-Date: 2026-06-15 00:00+0000\n"
-"Last-Translator: WPPoland <hello@plogins.com>\n"
-"Language-Team: Polish <pl_PL@li.org>\n"
-"Language: pl_PL\n"
+"PO-Revision-Date: 2026-06-16T20:24:08+00:00\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Domain: plogins-minimum\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
 #: plogins-minimum.php
 msgid "Minimum - Order Quantity Rules for WooCommerce"
-msgstr "Minimum - Reguły ilości zamówień dla WooCommerce"
+msgstr "Mindestbestellmengenregeln für WooCommerce"
 
 #. Plugin URI of the plugin
 #: plogins-minimum.php
 msgid "https://plogins.com/minimum/"
-msgstr "https://plogins.com/minimum/"
+msgstr "https://plogins.com/de/minimum/"
 
 #. Description of the plugin
 #: plogins-minimum.php
@@ -32,8 +32,8 @@ msgid ""
 "Set minimum and maximum quantity and order-total rules, enforced at cart and"
 " checkout."
 msgstr ""
-"Ustaw reguły minimalnej i maksymalnej ilości oraz wartości zamówienia, "
-"egzekwowane w koszyku i przy zamówieniu."
+"Lege Mindest- und Höchstmengen sowie Regeln für die Bestellsumme fest, die "
+"beim Warenkorb und an der Kasse durchgesetzt werden."
 
 #. Author of the plugin
 #: plogins-minimum.php
@@ -50,32 +50,32 @@ msgid ""
 "Minimum - Order Quantity Rules for WooCommerce requires WooCommerce to be "
 "active."
 msgstr ""
-"Minimum - Reguły ilości zamówień dla WooCommerce wymaga aktywnej wtyczki "
-"WooCommerce."
+"Mindestbestellmengenregeln für WooCommerce erfordern, dass WooCommerce aktiv"
+" ist."
 
 #: src/Rules/Admin.php:61
 msgid "Settings"
-msgstr "Ustawienia"
+msgstr "Einstellungen"
 
 #: src/Rules/Admin.php:75
 msgid "Minimum - Order Quantity Rules"
-msgstr "Minimum - Reguły ilości zamówień"
+msgstr "Mindestbestellmengenregeln"
 
 #: src/Rules/Admin.php:76
 msgid "Minimum"
-msgstr "Minimum"
+msgstr "Mindestens"
 
 #: src/Rules/Admin.php:142 src/Rules/Admin.php:352
 msgid "Remove"
-msgstr "Usuń"
+msgstr "Entfernen"
 
 #: src/Rules/Admin.php:143
 msgid "Target ID"
-msgstr "ID celu"
+msgstr "Ziel-ID"
 
 #: src/Rules/Admin.php:144 src/Rules/Admin.php:243
 msgid "Scope"
-msgstr "Zakres"
+msgstr "Umfang"
 
 #: src/Rules/Admin.php:145 src/Rules/Admin.php:245
 msgid "Min"
@@ -83,23 +83,23 @@ msgstr "Min"
 
 #: src/Rules/Admin.php:146 src/Rules/Admin.php:246
 msgid "Max"
-msgstr "Maks"
+msgstr "Max"
 
 #: src/Rules/Admin.php:147 src/Rules/Admin.php:247
 msgid "Step"
-msgstr "Krok"
+msgstr "Schritt"
 
 #: src/Rules/Admin.php:160
 msgid "All products (global)"
-msgstr "Wszystkie produkty (globalnie)"
+msgstr "Alle Produkte (global)"
 
 #: src/Rules/Admin.php:161
 msgid "Specific product"
-msgstr "Konkretny produkt"
+msgstr "Spezifisches Produkt"
 
 #: src/Rules/Admin.php:162
 msgid "Product category"
-msgstr "Kategoria produktów"
+msgstr "Produktkategorie"
 
 #: src/Rules/Admin.php:182
 msgid ""
@@ -107,42 +107,43 @@ msgid ""
 "products are added to the cart and again at checkout, with clear notices "
 "that block checkout until every rule is satisfied."
 msgstr ""
-"Zdefiniuj reguły ilości oraz minimalną wartość zamówienia. Reguły są "
-"egzekwowane przy dodawaniu produktów do koszyka oraz ponownie przy składaniu"
-" zamówienia, z czytelnymi komunikatami, które blokują finalizację zamówienia"
-" do czasu spełnienia wszystkich reguł."
+"Definiere Mengenregeln und einen Mindestbestellwert. Regeln werden "
+"durchgesetzt, wenn Produkte in den Warenkorb gelegt werden und erneut an der"
+" Kasse, mit klaren Hinweisen, die den Checkout blockieren, bis alle Regeln "
+"erfüllt sind."
 
 #: src/Rules/Admin.php:191
 msgid "Enforcement"
-msgstr "Egzekwowanie"
+msgstr "Durchsetzung"
 
 #: src/Rules/Admin.php:201
 msgid "Enforce quantity and order-total rules."
-msgstr "Egzekwuj reguły ilości i wartości zamówienia."
+msgstr "Setze Mengen- und Bestellgesamtregeln durch."
 
 #: src/Rules/Admin.php:203
 msgid ""
 "Master switch. Turn this off to keep your rules saved but stop enforcing "
 "them at the cart and checkout."
 msgstr ""
-"Przełącznik główny. Wyłącz go, aby zachować zapisane reguły, ale przestać je"
-" egzekwować w koszyku i przy zamówieniu."
+"Hauptschalter. Deaktiviere diese Option, damit deine Regeln gespeichert "
+"bleiben, sie aber nicht mehr im Warenkorb und an der Kasse durchgesetzt "
+"werden."
 
 #: src/Rules/Admin.php:209
 msgid "Minimum order total"
-msgstr "Minimalna wartość zamówienia"
+msgstr "Mindestbestellwert"
 
 #: src/Rules/Admin.php:222
 msgid ""
 "The smallest cart subtotal a customer can check out with. Set to 0 to "
 "disable the order-total rule."
 msgstr ""
-"Najmniejsza wartość koszyka, przy której klient może złożyć zamówienie. "
-"Ustaw 0, aby wyłączyć regułę wartości zamówienia."
+"Die kleinste Warenkorb-Zwischensumme, mit der ein Kunde zur Kasse gehen "
+"kann. Auf 0 setzen, um die Bestellsummenregel zu deaktivieren."
 
 #: src/Rules/Admin.php:228
 msgid "Quantity rules"
-msgstr "Reguły ilości"
+msgstr "Mengenregeln"
 
 #: src/Rules/Admin.php:230
 msgid ""
@@ -151,15 +152,15 @@ msgid ""
 "product rule beats a category rule, which beats the global rule. Leave any "
 "field at 0 to ignore that constraint."
 msgstr ""
-"Każda reguła określa dolną, górną granicę i stopień liczby jednostek, które "
-"klient może kupić. Jeśli można zastosować kilka reguł, wygrywa ta "
-"najbardziej szczegółowa: reguła produktu pokonuje regułę kategorii, która "
-"pokonuje regułę globalną. Pozostaw dowolne pole na wartość 0, aby zignorować"
-" to ograniczenie."
+"Jede Regel legt eine Untergrenze, eine Obergrenze und eine Stufe fest, wie "
+"viele Einheiten ein Kunde kaufen kann. Wenn mehrere Regeln gelten könnten, "
+"gewinnt die spezifischste Regel: Eine Produktregel übertrifft eine "
+"Kategorieregel, die wiederum die globale Regel übertrifft. Lass jedes Feld "
+"auf 0, um diese Einschränkung zu ignorieren."
 
 #: src/Rules/Admin.php:235
 msgid "No rules yet. Add your first quantity rule below."
-msgstr "Brak reguł. Dodaj swoją pierwszą regułę ilości poniżej."
+msgstr "Noch keine Regeln. Füge unten deine erste Mengenregel hinzu."
 
 #: src/Rules/Admin.php:239
 msgid ""
@@ -168,154 +169,139 @@ msgid ""
 " the editor and read the post or term ID from the URL (the post= or tag_ID= "
 "number)."
 msgstr ""
-"Dolna granica (min.), górna granica (maks.) i krok obowiązują w obrębie "
-"każdego zakresu. Aby zastosować regułę do pojedynczego produktu lub "
-"kategorii, wklej jego numeryczny identyfikator, otwórz produkt lub kategorię"
-" w edytorze i odczytaj identyfikator wpisu lub terminu z adresu URL (numer "
-"post= lub tag_ID=)."
+"Untergrenze (min.), Obergrenze (max.) und Stufe gelten je Geltungsbereich. "
+"Um auf ein einzelnes Produkt oder eine Kategorie abzuzielen, füge dessen "
+"numerische ID ein, öffne das Produkt oder die Kategorie im Editor und lies "
+"die Beitrags- oder Begriffs-ID aus der URL (die post=- oder tag_ID=-Nummer)."
 
 #: src/Rules/Admin.php:243
 msgid ""
 "Which products this rule covers: every product, one product, or a whole "
 "category."
 msgstr ""
-"Jakie produkty obejmuje ta zasada: każdy produkt, jeden produkt czy całą "
-"kategorię."
+"Welche Produkte diese Regel abdeckt: jedes Produkt, ein Produkt oder eine "
+"ganze Kategorie."
 
 #: src/Rules/Admin.php:244
 msgid ""
 "The numeric ID of the product or category this rule targets. Ignored for the"
 " global scope."
 msgstr ""
-"Numeryczny identyfikator produktu lub kategorii, której dotyczy ta reguła. "
-"Ignorowane dla zakresu globalnego."
+"Die numerische ID des Produkts oder der Kategorie, auf die diese Regel "
+"abzielt. Wird für den globalen Bereich ignoriert."
 
 #: src/Rules/Admin.php:244
 msgid "Product / Category ID"
-msgstr "ID produktu / kategorii"
+msgstr "Produkt-/Kategorie-ID"
 
 #: src/Rules/Admin.php:245
 msgid "Floor: customers must buy at least this many. 0 sets no floor."
 msgstr ""
-"Dolna granica: klienci muszą kupić co najmniej tyle. 0 = brak dolnej "
-"granicy."
+"Untergrenze: Kunden müssen mindestens so viele kaufen. 0 legt keine "
+"Untergrenze fest."
 
 #: src/Rules/Admin.php:246
 msgid "Ceiling: customers can buy at most this many. 0 sets no ceiling."
 msgstr ""
-"Górna granica: klienci mogą kupić maksymalnie tyle. 0 = brak górnej granicy."
+"Obergrenze: Kunden können höchstens so viele kaufen. 0 legt keine Obergrenze"
+" fest."
 
 #: src/Rules/Admin.php:247
 msgid ""
 "Quantity must be a multiple of this number, e.g. 6 forces 6, 12, 18. 0 or 1 "
 "allows any amount."
 msgstr ""
-"Ilość musi być wielokrotnością tej liczby, np. 6 wymusza 6, 12, 18. 0 lub 1 "
-"pozwala na dowolną ilość."
+"Die Menge muss ein Vielfaches dieser Zahl sein, z.B. 6 erzwingt 6, 12, 18. 0"
+" oder 1 erlaubt jede Menge."
 
 #: src/Rules/Admin.php:248
 msgid "Actions"
-msgstr "Akcje"
+msgstr "Aktionen"
 
 #: src/Rules/Admin.php:259
 msgid "+ Add rule"
-msgstr "+ Dodaj regułę"
+msgstr "+ Regel hinzufügen"
 
 #: src/Rules/Admin.php:264
 msgid "Notice messages"
-msgstr "Treści komunikatów"
+msgstr "Hinweismeldungen"
 
 #: src/Rules/Admin.php:266
 msgid ""
 "Shown to a customer when a rule is not met. Each {token} is swapped for the "
 "live value at checkout, so the message names the exact product and number."
 msgstr ""
-"Wyświetlane klientowi, gdy reguła nie jest spełniona. Każdy {token} jest "
-"zamieniany na aktualną wartość przy kasie, więc wiadomość zawiera dokładny "
-"produkt i numer."
+"Wird einem Kunden angezeigt, wenn eine Regel nicht erfüllt ist. Jeder "
+"{token} wird an der Kasse gegen den Live-Wert eingetauscht, sodass in der "
+"Nachricht das genaue Produkt und die genaue Nummer genannt werden."
 
 #. translators: 1: template with tokens, 2: the same message after tokens are
 #. filled in.
 #: src/Rules/Admin.php:272
 #, php-format
 msgid "Example: %1$s becomes %2$s"
-msgstr "Przykład: %1$s staje się %2$s"
+msgstr "Beispiel: %1$s wird zu %2$s"
 
 #: src/Rules/Admin.php:273 src/Rules/Settings.php:53
 msgid "You must buy at least {min} of \"{product}\"."
-msgstr "Musisz kupić co najmniej {min} szt. produktu „{product}”."
+msgstr "Du musst mindestens {min} von „{product}“ kaufen."
 
 #: src/Rules/Admin.php:274
 msgid "You must buy at least 6 of \"Espresso Beans\"."
-msgstr "Musisz kupić co najmniej 6 ziaren espresso."
+msgstr "Du musst mindestens 6 „Espressobohnen“ kaufen."
 
 #: src/Rules/Admin.php:282
 msgid "Below minimum quantity"
-msgstr "Poniżej minimalnej ilości"
+msgstr "Unterhalb der Mindestmenge"
 
 #: src/Rules/Admin.php:283
 msgid "Above maximum quantity"
-msgstr "Powyżej maksymalnej ilości"
+msgstr "Oberhalb der Höchstmenge"
 
 #: src/Rules/Admin.php:284
 msgid "Invalid step quantity"
-msgstr "Nieprawidłowa wielokrotność ilości"
+msgstr "Ungültige Schrittanzahl"
 
 #: src/Rules/Admin.php:285
 msgid "Below minimum order total"
-msgstr "Poniżej minimalnej wartości zamówienia"
+msgstr "Unter dem Mindestbestellwert"
 
 #: src/Rules/Admin.php:311
 msgid "Rule scope"
-msgstr "Zakres reguły"
+msgstr "Regelumfang"
 
 #: src/Rules/Admin.php:328
 msgid "Target product or category ID"
-msgstr "ID docelowego produktu lub kategorii"
+msgstr "Zielprodukt- oder Kategorie-ID"
 
 #: src/Rules/Admin.php:336
 msgid "Minimum quantity"
-msgstr "Minimalna ilość"
+msgstr "Mindestmenge"
 
 #: src/Rules/Admin.php:342
 msgid "Maximum quantity"
-msgstr "Maksymalna ilość"
+msgstr "Maximale Menge"
 
 #: src/Rules/Admin.php:348
 msgid "Step quantity"
-msgstr "Krok ilości"
+msgstr "Schrittmenge"
 
 #. translators: %s: list of available replacement tokens.
 #: src/Rules/Admin.php:386
 #, php-format
 msgid "Available tokens: %s"
-msgstr "Dostępne symbole zastępcze: %s"
+msgstr "Verfügbare Token: %s"
 
 #: src/Rules/Settings.php:54
 msgid "You can buy at most {max} of \"{product}\"."
-msgstr "Możesz kupić maksymalnie {max} szt. produktu „{product}”."
+msgstr "Du kannst höchstens {max} von „{product}“ kaufen."
 
 #: src/Rules/Settings.php:55
 msgid "\"{product}\" must be bought in multiples of {step}."
-msgstr "Produkt „{product}” należy kupować w wielokrotnościach {step}."
+msgstr "„{product}“ muss in Vielfachen von {step} gekauft werden."
 
 #: src/Rules/Settings.php:56
 msgid "Your order total must be at least {min} (currently {total})."
 msgstr ""
-"Wartość Twojego zamówienia musi wynosić co najmniej {min} (obecnie {total})."
-
-#~ msgid ""
-#~ "Set a minimum, maximum and step quantity. A specific product rule overrides "
-#~ "a category rule, which overrides a global rule. Leave a field at 0 to ignore"
-#~ " that constraint."
-#~ msgstr ""
-#~ "Ustaw minimalną, maksymalną oraz krokową ilość. Reguła dla konkretnego "
-#~ "produktu ma pierwszeństwo przed regułą kategorii, a ta przed regułą "
-#~ "globalną. Pozostaw pole na wartości 0, aby pominąć dane ograniczenie."
-
-#~ msgid ""
-#~ "Shown to customers when a rule is not met. Tokens are replaced "
-#~ "automatically."
-#~ msgstr ""
-#~ "Wyświetlane klientom, gdy reguła nie jest spełniona. Symbole zastępcze są "
-#~ "podstawiane automatycznie."
+"Die Gesamtsumme deiner Bestellung muss mindestens {min} (derzeit {total}) "
+"betragen."
