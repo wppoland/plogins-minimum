@@ -1,0 +1,85 @@
+# wp.org Stable Readme translation (es_ES)
+msgid ""
+msgstr ""
+"Project-Id-Version: minimum Stable Readme\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: plogins-i18n\n"
+
+msgid "Requires Plugins: woocommerce"
+msgstr "Requiere complementos: woocommerce"
+
+msgid "Set minimum, maximum and step quantity rules plus a minimum order total, enforced at the cart and checkout with notices that block checkout."
+msgstr "Establezca reglas de cantidad mínima, máxima y de pasos más un total mínimo de pedido, aplicado en el carrito y en el momento del pago con avisos que bloquean el proceso de pago."
+
+msgid "Minimum adds quantity and spend rules to your WooCommerce store. You decide how many units of a product a customer has to buy, cap how many they may buy, sell in fixed pack sizes, and require a minimum order total before checkout is allowed. Rules can be set for a single product, a whole category, or every product at once."
+msgstr "El mínimo añade cantidad y reglas de gasto a su tienda WooCommerce. Usted decide cuántas unidades de un producto tiene que comprar un cliente, limita cuántas puede comprar, vende en tamaños de paquetes fijos y exige un pedido total mínimo antes de que se permita el pago. Se pueden establecer reglas para un solo producto, una categoría completa o todos los productos a la vez."
+
+msgid "The plugin checks the cart when an item is added and again at checkout. If a rule is not met, the customer sees a notice explaining what to change, and checkout stays blocked until it is fixed."
+msgstr "El complemento verifica el carrito cuando se añade un artículo y nuevamente al finalizar la compra. Si no se cumple una regla, el cliente ve un aviso que explica qué cambiar y el proceso de pago permanece bloqueado hasta que se solucione."
+
+msgid "Source code and bug reports live on GitHub: https://github.com/wppoland/plogins-minimum"
+msgstr "El código fuente y los informes de errores están disponibles en GitHub: https://github.com/wppoland/plogins-minimum"
+
+msgid "What you can set up:"
+msgstr "Qué puedes configurar:"
+
+msgid "* Minimum quantity: require at least N units of a product before checkout.\n* Maximum quantity: cap how many units a customer can buy.\n* Step quantity: only allow multiples, for products sold in packs (for example, packs of 6).\n* Minimum order total: require a cart subtotal before checkout is allowed.\n* Notice wording: edit the message shown for each unmet rule, using tokens like {min}, {max}, {step}, {product} and {total}."
+msgstr "*Cantidad mínima: requiere al menos N unidades de un producto antes de realizar el pago.\n* Cantidad máxima: limita cuántas unidades puede comprar un cliente.\n* Cantidad de pasos: solo permite múltiplos, para productos vendidos en paquetes (por ejemplo, paquetes de 6).\n* Total mínimo del pedido: requiere un subtotal del carrito antes de permitir el pago.\n* Redacción del aviso: edite el mensaje que se muestra para cada regla no cumplida, usando tokens como {min}, {max}, {step}, {product} y {total}."
+
+msgid "When more than one rule could apply to a product, the more specific one wins for each value: a product rule beats a category rule, and a category rule beats the global rule. Min, max and step are resolved separately, so you can mix them across scopes."
+msgstr "Cuando se puede aplicar más de una regla a un producto, la más específica gana para cada valor: una regla de producto supera a una regla de categoría y una regla de categoría supera a la regla global. El mínimo, el máximo y el paso se resuelven por separado, por lo que puede combinarlos en distintos ámbitos."
+
+msgid "Other things worth knowing:"
+msgstr "Otras cosas que vale la pena saber:"
+
+msgid "* Works with HPOS (custom order tables) and the Cart and Checkout blocks, as well as the classic cart and checkout. Validation reads the cart contents, so both layouts are covered.\n* Settings screen follows the WordPress admin style, respects the dark colour scheme, and labels every field for keyboard and screen-reader use.\n* No custom database tables. Deleting the plugin removes its two options and leaves the rest of your database untouched.\n* No bundled libraries or jQuery on the settings screen."
+msgstr "* Funciona con HPOS (tablas de pedidos personalizadas) y los bloques Carrito y Pago, así como el clásico carrito y pago. La validación lee el contenido del carrito, por lo que ambos diseños están cubiertos.\n* La pantalla de configuración sigue el estilo de administración de WordPress, respeta la combinación de colores oscuros y etiqueta cada campo para el uso del teclado y del lector de pantalla.\n* No hay tablas de bases de datos personalizadas. Eliminar el complemento elimina sus dos opciones y deja intacto el resto de tu base de datos.\n* No hay bibliotecas incluidas ni jQuery en la pantalla de configuración."
+
+msgid "1. Install and activate WooCommerce 8.0 or later.\n2. Upload the `plogins-minimum` folder to `/wp-content/plugins/`, or install the zip from the <strong>Plugins → Add New → Upload Plugin<strong> screen. 3. Activate the plugin through the </strong>Plugins<strong> screen. 4. Go to </strong>WooCommerce → Minimum</strong> and add a rule (for example, a product with a minimum quantity of 3), or set a minimum order total."
+msgstr "1. Instale y active WooCommerce 8.0 o posterior.\n2. Cargue la carpeta `plogins-minimum` en `/wp-content/plugins/`, o instale el zip desde la pantalla <strong>Complementos → Añadir nuevo → Cargar complemento<strong>. 3. Active el complemento a través de la pantalla </strong>Complementos<strong>. 4. Vaya a </strong>WooCommerce → Mínimo</strong> y añade una regla (por ejemplo, un producto con una cantidad mínima de 3) o establezca un total mínimo de pedido."
+
+msgid "* <strong>Documentation</strong> - https://plogins.com/plogins-minimum/docs/\n* <strong>Plugin page</strong> - https://plogins.com/plogins-minimum/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-minimum\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-minimum/issues"
+msgstr "* <strong>Documentación</strong> - https://plogins.com/es/plogins-minimum/docs/\n* <strong>Página de complementos</strong> - https://plogins.com/es/plogins-minimum/\n* <strong>Código fuente</strong> - https://github.com/wppoland/plogins-minimum\n* <strong>Informes de errores y solicitudes de funciones</strong> - https://github.com/wppoland/plogins-minimum/issues"
+
+msgid "Yes. Minimum is a WooCommerce extension and needs WooCommerce 8.0 or later active. If WooCommerce is missing, the plugin stays dormant and shows an admin notice."
+msgstr "Sí. Mínimo es una extensión de WooCommerce y necesita WooCommerce 8.0 o posterior activo. Si falta WooCommerce, el complemento permanece inactivo y muestra un aviso de administrador."
+
+msgid "Each value is resolved on its own. For min, max and step separately, a product rule overrides a category rule, which overrides the global rule. A field left at 0 means that value is not enforced."
+msgstr "Cada valor se resuelve por sí solo. Para mínimo, máximo y paso por separado, una regla de producto anula una regla de categoría, que anula la regla global. Un campo dejado en 0 significa que ese valor no se aplica."
+
+msgid "Yes. Rules are checked against the cart contents rather than a specific template, so the same notices appear and checkout is blocked whether you use the classic pages or the Cart and Checkout blocks."
+msgstr "Sí. Las reglas se comparan con el contenido del carrito en lugar de con una plantilla específica, por lo que aparecen los mismos avisos y el pago se bloquea ya sea que use las páginas clásicas o los bloques Carrito y Pago."
+
+msgid "Yes. Each notice has its own field on the settings screen. Tokens such as {min}, {max}, {step}, {product} and {total} are swapped in for the matching values."
+msgstr "Sí. Cada aviso tiene su propio campo en la pantalla de configuración. Los tokens como {min}, {max}, {step}, {product} y {total} se intercambian por los valores coincidentes."
+
+msgid "Yes. The Enforcement switch on the settings screen stops rules being applied at the cart and checkout while keeping them saved."
+msgstr "Sí. El interruptor Aplicación en la pantalla de configuración detiene la aplicación de reglas en el carrito y en la caja mientras las mantiene guardadas."
+
+msgid "The uninstall step deletes the `minimum_settings` and `minimum_db_version` options. There are no custom tables, so nothing else is added to or left in your database."
+msgstr "El paso de desinstalación elimina las opciones `minimum_settings` y `minimum_db_version`. No hay tablas personalizadas, por lo que no se añade ni se deja nada más en tu base de datos."
+
+msgid "Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data."
+msgstr "Sí. Este complemento es compatible con WordPress Multisite. Activarlo en red o activarlo en sitios individuales; Cada sitio mantiene su propia configuración y datos."
+
+msgid "1. On the storefront.\n2. Settings in the WordPress admin.\n3. On a mobile device."
+msgstr "1. En el escaparate.\n2. Configuración en el administrador de WordPress.\n3. En un dispositivo móvil."
+
+msgid "Minimum does not connect to any external services. Rules are evaluated against the cart on your own server, and the only data stored is two WordPress options, `minimum_settings` (your rules and notice wording) and `minimum_db_version`. The plugin sends no email and creates no custom database tables."
+msgstr "Mínimo no se conecta a ningún servicio externo. Las reglas se evalúan con respecto al carrito en su propio servidor, y los únicos datos almacenados son dos opciones de WordPress, `minimum_settings` (sus reglas y texto de aviso) y `minimum_db_version`. El complemento no envía correo electrónico ni crea tablas de bases de datos personalizadas."
+
+msgid "* First stable release."
+msgstr "* Primera versión estable."
+
+msgid "* Renamed to Plogins Minimum for WooCommerce for a more distinctive plugin name."
+msgstr "* Renombrado a Plogins Mínimo para WooCommerce para un nombre de complemento más distintivo."
+
+msgid "* Extension filters `minimum/rules` and `minimum/min_order_total` for add-ons such as Minimum Pro role rules.\n* Role scope support in the rules engine (`role` slug on rule rows)."
+msgstr "* La extensión filtra `minimum/rules` y `minimum/min_order_total` para complementos como reglas de rol de Maximum Pro.\n* Soporte de alcance de rol en el motor de reglas (slug `role` en filas de reglas)."
+
+msgid "* Initial release. Per-product, per-category and global quantity rules (min, max, step), a minimum order total, and editable notice messages. Enforced on add-to-cart and at the cart and checkout. Compatible with HPOS and the Cart and Checkout blocks. No jQuery on the settings screen."
+msgstr "* Lanzamiento inicial. Reglas de cantidad global por producto, por categoría y (mínimo, máximo, paso), un pedido mínimo total y mensajes de aviso editables. Se aplica al añadir al carrito, al carrito y al finalizar la compra. Compatible con HPOS y los bloques Cart y Checkout. No hay jQuery en la pantalla de configuración."
+
