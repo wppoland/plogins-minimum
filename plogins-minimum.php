@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Plogins Minimum - Minimum Order for WooCommerce
+ * Plugin Name:       Minimum - Minimum Order for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-minimum/
  * Description:        Set minimum and maximum quantity and order-total rules, enforced at cart and checkout.
  * Version:           1.0.3
