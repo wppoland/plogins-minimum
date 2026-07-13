@@ -195,13 +195,6 @@
 	color: var( --minimum-accent-strong );
 	font-style: normal;
 }
-
-@media ( prefers-color-scheme: dark ) {
-	.minimum-token-example code {
-		background: rgba( 255, 255, 255, 0.06 );
-	}
-}
-
 .minimum-rule-target:disabled {
 	opacity: 0.5;
 }
@@ -232,23 +225,5 @@
 @media ( prefers-reduced-motion: reduce ) {
 	.minimum-rule-row.is-new > td:first-child {
 		animation: none;
-	}
-}
-
-@media ( prefers-color-scheme: dark ) {
-	.minimum-settings {
-		--minimum-border: #3c434a;
-		--minimum-muted: #a7aaad;
-		--minimum-surface: #1d2327;
-		--minimum-accent: #a991ff;
-		--minimum-accent-strong: #b9a6ff;
-		--minimum-accent-soft: rgba( 169, 145, 255, 0.18 );
-		--minimum-floor: #a991ff;
-		--minimum-ceiling: #ea7ec3;
-		--minimum-step: #43c79a;
-	}
-
-	.minimum-empty {
-		background: rgba( 255, 255, 255, 0.03 );
 	}
 }
