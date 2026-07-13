@@ -1,4 +1,4 @@
-=== Plogins Minimum - Minimum Order for WooCommerce ===
+=== Minimum - Minimum Order for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, minimum order, quantity, order rules, minimum quantity
 Requires at least: 6.5
