@@ -29,8 +29,8 @@ msgstr "https://plogins.com/es/minimum/"
 #. Description of the plugin
 #: plogins-minimum.php
 msgid ""
-"Set minimum and maximum quantity and order-total rules, enforced at cart and"
-" checkout."
+"Set minimum and maximum quantity and order-total rules, enforced at cart and "
+"checkout."
 msgstr ""
 "Establezca reglas de cantidad mínima y máxima y total del pedido, que se "
 "aplicarán en el carrito y en el momento del pago."
@@ -107,9 +107,9 @@ msgid ""
 "products are added to the cart and again at checkout, with clear notices "
 "that block checkout until every rule is satisfied."
 msgstr ""
-"Defina reglas de cantidad y un total mínimo de pedido. Las reglas se aplican"
-" cuando se agregan productos al carrito y nuevamente al finalizar la compra,"
-" con avisos claros que bloquean el proceso de compra hasta que se cumplan "
+"Defina reglas de cantidad y un total mínimo de pedido. Las reglas se aplican "
+"cuando se agregan productos al carrito y nuevamente al finalizar la compra, "
+"con avisos claros que bloquean el proceso de compra hasta que se cumplan "
 "todas las reglas."
 
 #: src/Rules/Admin.php:191
@@ -164,8 +164,8 @@ msgstr "Aún no hay reglas. Añade su primera regla de cantidad a continuación.
 #: src/Rules/Admin.php:239
 msgid ""
 "Floor (min), ceiling (max) and step apply per scope. To target a single "
-"product or a category, paste its numeric ID, open the product or category in"
-" the editor and read the post or term ID from the URL (the post= or tag_ID= "
+"product or a category, paste its numeric ID, open the product or category in "
+"the editor and read the post or term ID from the URL (the post= or tag_ID= "
 "number)."
 msgstr ""
 "El mínimo (mín.), el máximo (máx.) y el incremento se aplican según el "
@@ -183,8 +183,8 @@ msgstr ""
 
 #: src/Rules/Admin.php:244
 msgid ""
-"The numeric ID of the product or category this rule targets. Ignored for the"
-" global scope."
+"The numeric ID of the product or category this rule targets. Ignored for the "
+"global scope."
 msgstr ""
 "El ID numérico del producto o categoría al que se dirige esta regla. "
 "Ignorado para el ámbito global."
@@ -234,8 +234,7 @@ msgstr ""
 "intercambia por el valor activo al finalizar la compra, por lo que el "
 "mensaje indica el producto y el número exactos."
 
-#. translators: 1: template with tokens, 2: the same message after tokens are
-#. filled in.
+#. translators: 1: template with tokens, 2: the same message after tokens are filled in.
 #: src/Rules/Admin.php:272
 #, php-format
 msgid "Example: %1$s becomes %2$s"
