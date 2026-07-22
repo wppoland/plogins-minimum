@@ -29,8 +29,8 @@ msgstr "https://plogins.com/de/minimum/"
 #. Description of the plugin
 #: plogins-minimum.php
 msgid ""
-"Set minimum and maximum quantity and order-total rules, enforced at cart and"
-" checkout."
+"Set minimum and maximum quantity and order-total rules, enforced at cart and "
+"checkout."
 msgstr ""
 "Lege Mindest- und Höchstmengen sowie Regeln für die Bestellsumme fest, die "
 "beim Warenkorb und an der Kasse durchgesetzt werden."
@@ -50,8 +50,8 @@ msgid ""
 "Minimum - Order Quantity Rules for WooCommerce requires WooCommerce to be "
 "active."
 msgstr ""
-"Mindestbestellmengenregeln für WooCommerce erfordern, dass WooCommerce aktiv"
-" ist."
+"Mindestbestellmengenregeln für WooCommerce erfordern, dass WooCommerce aktiv "
+"ist."
 
 #: src/Rules/Admin.php:61
 msgid "Settings"
@@ -108,8 +108,8 @@ msgid ""
 "that block checkout until every rule is satisfied."
 msgstr ""
 "Definiere Mengenregeln und einen Mindestbestellwert. Regeln werden "
-"durchgesetzt, wenn Produkte in den Warenkorb gelegt werden und erneut an der"
-" Kasse, mit klaren Hinweisen, die den Checkout blockieren, bis alle Regeln "
+"durchgesetzt, wenn Produkte in den Warenkorb gelegt werden und erneut an der "
+"Kasse, mit klaren Hinweisen, die den Checkout blockieren, bis alle Regeln "
 "erfüllt sind."
 
 #: src/Rules/Admin.php:191
@@ -165,8 +165,8 @@ msgstr "Noch keine Regeln. Füge unten deine erste Mengenregel hinzu."
 #: src/Rules/Admin.php:239
 msgid ""
 "Floor (min), ceiling (max) and step apply per scope. To target a single "
-"product or a category, paste its numeric ID, open the product or category in"
-" the editor and read the post or term ID from the URL (the post= or tag_ID= "
+"product or a category, paste its numeric ID, open the product or category in "
+"the editor and read the post or term ID from the URL (the post= or tag_ID= "
 "number)."
 msgstr ""
 "Untergrenze (min.), Obergrenze (max.) und Stufe gelten je Geltungsbereich. "
@@ -184,8 +184,8 @@ msgstr ""
 
 #: src/Rules/Admin.php:244
 msgid ""
-"The numeric ID of the product or category this rule targets. Ignored for the"
-" global scope."
+"The numeric ID of the product or category this rule targets. Ignored for the "
+"global scope."
 msgstr ""
 "Die numerische ID des Produkts oder der Kategorie, auf die diese Regel "
 "abzielt. Wird für den globalen Bereich ignoriert."
@@ -203,16 +203,16 @@ msgstr ""
 #: src/Rules/Admin.php:246
 msgid "Ceiling: customers can buy at most this many. 0 sets no ceiling."
 msgstr ""
-"Obergrenze: Kunden können höchstens so viele kaufen. 0 legt keine Obergrenze"
-" fest."
+"Obergrenze: Kunden können höchstens so viele kaufen. 0 legt keine Obergrenze "
+"fest."
 
 #: src/Rules/Admin.php:247
 msgid ""
 "Quantity must be a multiple of this number, e.g. 6 forces 6, 12, 18. 0 or 1 "
 "allows any amount."
 msgstr ""
-"Die Menge muss ein Vielfaches dieser Zahl sein, z.B. 6 erzwingt 6, 12, 18. 0"
-" oder 1 erlaubt jede Menge."
+"Die Menge muss ein Vielfaches dieser Zahl sein, z.B. 6 erzwingt 6, 12, 18. 0 "
+"oder 1 erlaubt jede Menge."
 
 #: src/Rules/Admin.php:248
 msgid "Actions"
@@ -235,8 +235,7 @@ msgstr ""
 "{token} wird an der Kasse gegen den Live-Wert eingetauscht, sodass in der "
 "Nachricht das genaue Produkt und die genaue Nummer genannt werden."
 
-#. translators: 1: template with tokens, 2: the same message after tokens are
-#. filled in.
+#. translators: 1: template with tokens, 2: the same message after tokens are filled in.
 #: src/Rules/Admin.php:272
 #, php-format
 msgid "Example: %1$s becomes %2$s"
