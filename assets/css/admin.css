@@ -227,3 +227,88 @@
 		animation: none;
 	}
 }
+
+/* ------------------------------------------------------------------ *
+ * PRO upsell — dismissible banner, sidebar promo, "what PRO adds"
+ * locked cards. Pure advertising (no disabled inputs), scoped entirely
+ * to .minimum-settings so nothing leaks into the rest of wp-admin.
+ * The dark violet accent-strong is used behind WHITE button text:
+ * #5a36e0 clears AA (contrast 6.6:1 on white).
+ * ------------------------------------------------------------------ */
+
+.minimum-settings {
+	--minimum-pro-gap: 20px;
+	--minimum-pro-radius-sm: 6px;
+}
+
+/* Top banner */
+.minimum-settings .minimum-pro-banner {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin: 1em 0 var( --minimum-pro-gap );
+	padding: 12px 16px;
+	border: 1px solid color-mix( in srgb, var( --minimum-accent ) 30%, var( --minimum-border ) );
+	border-inline-start: 4px solid var( --minimum-accent );
+	border-radius: var( --minimum-radius );
+	background: color-mix( in srgb, var( --minimum-accent ) 7%, #fff );
+}
+.minimum-settings .minimum-pro-banner__tag,
+.minimum-settings .minimum-pro-card__badge,
+.minimum-settings .minimum-pro-aside__eyebrow {
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+.minimum-settings .minimum-pro-banner__tag { flex: 0 0 auto; padding: 2px 8px; border-radius: 999px; color: #fff; background: var( --minimum-accent-strong ); }
+.minimum-settings .minimum-pro-banner__text { flex: 1 1 auto; margin: 0; color: #1d2327; }
+.minimum-settings .minimum-pro-banner__sub { margin-inline-start: 4px; color: var( --minimum-muted ); }
+.minimum-settings .minimum-pro-banner__price { margin-inline-start: 6px; color: var( --minimum-muted ); font-weight: 600; white-space: nowrap; }
+.minimum-settings .minimum-pro-banner__dismiss { flex: 0 0 auto; font-size: 18px; line-height: 1; text-decoration: none; color: var( --minimum-muted ); padding: 4px; border-radius: 4px; }
+.minimum-settings .minimum-pro-banner__dismiss:hover { color: #1d2327; background: rgba( 0, 0, 0, 0.05 ); }
+
+/* Accent CTA buttons (override WP blue with the readable dark accent) */
+.minimum-settings .minimum-pro-banner__cta.button-primary,
+.minimum-settings .minimum-pro-aside__cta.button-primary {
+	background: var( --minimum-accent-strong );
+	border-color: color-mix( in srgb, var( --minimum-accent-strong ) 80%, #000 );
+	color: #fff;
+	text-shadow: none;
+	box-shadow: none;
+}
+.minimum-settings .minimum-pro-banner__cta.button-primary:hover,
+.minimum-settings .minimum-pro-aside__cta.button-primary:hover { background: color-mix( in srgb, var( --minimum-accent-strong ) 88%, #000 ); }
+
+/* Sidebar promo card */
+.minimum-settings .minimum-pro-aside {
+	background: var( --minimum-surface );
+	border: 1px solid var( --minimum-border );
+	border-top: 3px solid var( --minimum-accent );
+	border-radius: var( --minimum-radius );
+	padding: 18px 20px;
+	max-width: 320px;
+}
+.minimum-settings .minimum-pro-aside__eyebrow { margin: 0 0 4px; color: var( --minimum-accent-strong ); }
+.minimum-settings .minimum-pro-aside__heading { margin: 0 0 12px; font-size: 16px; line-height: 1.3; }
+.minimum-settings .minimum-pro-aside__list { margin: 0 0 16px; padding: 0; list-style: none; }
+.minimum-settings .minimum-pro-aside__list li { display: flex; align-items: flex-start; gap: 8px; padding: 5px 0; color: #1d2327; font-size: 13px; }
+.minimum-settings .minimum-pro-aside__lock::before,
+.minimum-settings .minimum-pro-card__lock::before { content: "\f160"; font-family: dashicons; font-size: 15px; line-height: 1.2; color: var( --minimum-accent ); }
+.minimum-settings .minimum-pro-aside__cta { width: 100%; text-align: center; }
+.minimum-settings .minimum-pro-aside__price { margin: 10px 0 0; font-size: 12px; color: var( --minimum-muted ); text-align: center; }
+
+/* "What PRO adds" locked cards */
+.minimum-settings .minimum-pro-cards { max-width: 60rem; margin: var( --minimum-pro-gap ) 0 0; }
+.minimum-settings .minimum-pro-cards__title { font-size: 15px; margin: 0 0 12px; }
+.minimum-settings .minimum-pro-cards__grid { display: grid; gap: 14px; grid-template-columns: repeat( auto-fill, minmax( 230px, 1fr ) ); }
+.minimum-settings .minimum-pro-card { position: relative; padding: 16px; border: 1px solid var( --minimum-border ); border-radius: var( --minimum-pro-radius-sm ); background: color-mix( in srgb, var( --minimum-accent ) 3%, #fff ); }
+.minimum-settings .minimum-pro-card__badge { position: absolute; top: 12px; inset-inline-end: 12px; padding: 1px 7px; border-radius: 999px; color: var( --minimum-accent-strong ); border: 1px solid color-mix( in srgb, var( --minimum-accent ) 40%, #fff ); }
+.minimum-settings .minimum-pro-card__lock { display: inline-block; margin-bottom: 6px; }
+.minimum-settings .minimum-pro-card__title { margin: 0 0 6px; font-size: 14px; line-height: 1.3; }
+.minimum-settings .minimum-pro-card__desc { margin: 0; font-size: 12.5px; line-height: 1.5; color: var( --minimum-muted ); }
+
+@media ( prefers-reduced-motion: no-preference ) {
+	.minimum-settings .minimum-pro-banner__cta,
+	.minimum-settings .minimum-pro-aside__cta { transition: background-color 0.15s ease, border-color 0.15s ease; }
+}

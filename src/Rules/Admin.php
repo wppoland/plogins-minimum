@@ -24,6 +24,13 @@ final class Admin implements HasHooks {
 	private const SECTION = 'minimum_general';
 
 	/**
+	 * Lazily-built PRO upsell renderer.
+	 *
+	 * @var ProUpsell|null
+	 */
+	private ?ProUpsell $pro_upsell = null;
+
+	/**
 	 * Constructor.
 	 *
 	 * @param Settings $settings Settings store.
@@ -31,6 +38,13 @@ final class Admin implements HasHooks {
 	public function __construct(
 		private readonly Settings $settings,
 	) {}
+
+	/**
+	 * Shared PRO upsell renderer.
+	 */
+	private function pro_upsell(): ProUpsell {
+		return $this->pro_upsell ??= new ProUpsell();
+	}
 
 	/**
 	 * Register admin hooks.
@@ -43,6 +57,7 @@ final class Admin implements HasHooks {
 			'plugin_action_links_' . plugin_basename( \Minimum\PLUGIN_FILE ),
 			array( $this, 'action_links' ),
 		);
+		$this->pro_upsell()->registerHooks();
 	}
 
 	/**
@@ -178,6 +193,9 @@ final class Admin implements HasHooks {
 		?>
 		<div class="wrap minimum-settings">
 			<h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
+
+			<?php $this->pro_upsell()->banner(); ?>
+
 			<p class="minimum-settings__lead">
 				<?php esc_html_e( 'Define quantity rules and a minimum order total. Rules are enforced when products are added to the cart and again at checkout, with clear notices that block checkout until every rule is satisfied.', 'plogins-minimum' ); ?>
 			</p>
@@ -289,6 +307,8 @@ final class Admin implements HasHooks {
 
 				<?php submit_button(); ?>
 			</form>
+
+			<?php $this->pro_upsell()->cards(); ?>
 		</div>
 		<?php
 	}
