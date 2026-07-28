@@ -11,7 +11,6 @@ namespace Minimum\Rules;
 
 defined( 'ABSPATH' ) || exit;
 
-use Minimum\Admin\ProUpsell;
 use Minimum\Contract\HasHooks;
 
 /**
@@ -25,6 +24,13 @@ final class Admin implements HasHooks {
 	private const SECTION = 'minimum_general';
 
 	/**
+	 * Lazily-built PRO upsell renderer.
+	 *
+	 * @var ProUpsell|null
+	 */
+	private ?ProUpsell $pro_upsell = null;
+
+	/**
 	 * Constructor.
 	 *
 	 * @param Settings $settings Settings store.
@@ -34,16 +40,9 @@ final class Admin implements HasHooks {
 	) {}
 
 	/**
-	 * Lazily built PRO upsell renderer.
-	 *
-	 * @var ProUpsell|null
+	 * Shared PRO upsell renderer.
 	 */
-	private ?ProUpsell $pro_upsell = null;
-
-	/**
-	 * PRO upsell renderer, built on first use.
-	 */
-	private function proUpsell(): ProUpsell {
+	private function pro_upsell(): ProUpsell {
 		return $this->pro_upsell ??= new ProUpsell();
 	}
 
@@ -58,7 +57,7 @@ final class Admin implements HasHooks {
 			'plugin_action_links_' . plugin_basename( \Minimum\PLUGIN_FILE ),
 			array( $this, 'action_links' ),
 		);
-		$this->proUpsell()->registerHooks();
+		$this->pro_upsell()->registerHooks();
 	}
 
 	/**
@@ -195,13 +194,12 @@ final class Admin implements HasHooks {
 		<div class="wrap minimum-settings">
 			<h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
 
-			<?php $this->proUpsell()->banner(); ?>
+			<?php $this->pro_upsell()->banner(); ?>
 
 			<p class="minimum-settings__lead">
 				<?php esc_html_e( 'Define quantity rules and a minimum order total. Rules are enforced when products are added to the cart and again at checkout, with clear notices that block checkout until every rule is satisfied.', 'plogins-minimum' ); ?>
 			</p>
 
-			<div class="minimum-cols">
 			<form method="post" action="options.php">
 				<?php settings_fields( self::GROUP ); ?>
 
@@ -310,10 +308,7 @@ final class Admin implements HasHooks {
 				<?php submit_button(); ?>
 			</form>
 
-				<?php $this->proUpsell()->aside(); ?>
-			</div>
-
-			<?php $this->proUpsell()->cards(); ?>
+			<?php $this->pro_upsell()->cards(); ?>
 		</div>
 		<?php
 	}

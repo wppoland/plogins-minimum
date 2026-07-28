@@ -23,7 +23,7 @@
 	var empty = document.getElementById( 'minimum-rules-empty' );
 	var addBtn = document.getElementById( 'minimum-add-rule' );
 
-	/** Next row index — start past any server-rendered rows. */
+	/** Next row index, start past any server-rendered rows. */
 	var nextIndex = tbody ? tbody.querySelectorAll( 'tr' ).length : 0;
 
 	function esc( value ) {
