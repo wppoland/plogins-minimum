@@ -43,7 +43,7 @@ final class Plugin {
 	private bool $booted = false;
 
 	/**
-	 * Private constructor — use Plugin::instance().
+	 * Private constructor, use Plugin::instance().
 	 *
 	 * Service factories are registered eagerly so that activation hooks never
 	 * encounter an empty container.
