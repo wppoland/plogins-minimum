@@ -24,3 +24,14 @@ namespace Minimum {
         define('Minimum\\PLUGIN_DIR', '/tmp/minimum');
     }
 }
+
+namespace {
+    // Defined at runtime by the main plugin file; phpstan does not evaluate
+    // those define() calls, so the ProUpsell panel would read as undefined.
+    if (! defined('MINIMUM_DIR')) {
+        define('MINIMUM_DIR', '/tmp/minimum/');
+    }
+    if (! defined('MINIMUM_URL')) {
+        define('MINIMUM_URL', 'https://example.test/wp-content/plugins/minimum/');
+    }
+}
