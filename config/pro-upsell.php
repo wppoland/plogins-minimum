@@ -22,8 +22,8 @@ return [
     ],
     'features'   => [
         [
-            'en' => ['title' => 'Per-product rules', 'desc' => 'Min, max and step overrides on the product Inventory tab.'],
-            'pl' => ['title' => 'Reguły per produkt', 'desc' => 'Nadpisania min, max i kroku na karcie produktu w zakładce Magazyn.'],
+            'en' => ['title' => 'Rules on the product editor', 'desc' => 'Set a product\'s min, max and step on its own Inventory tab instead of adding a product-scoped row to the rules table. The free plugin already supports per-product rules; this changes where you set them.'],
+            'pl' => ['title' => 'Reguły w edytorze produktu', 'desc' => 'Ustawiasz min, max i krok na karcie produktu w zakładce Magazyn, zamiast dodawać regułę o zasięgu produktu w tabeli reguł. Darmowa wtyczka obsługuje już reguły per produkt; to zmienia miejsce, w którym je ustawiasz.'],
         ],
         [
             'en' => ['title' => 'Per-role rules', 'desc' => 'Different quantity rules and order totals for wholesale, trade and retail roles from one screen.'],
