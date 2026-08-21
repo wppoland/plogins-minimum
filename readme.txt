@@ -17,7 +17,7 @@ Minimum adds quantity and spend rules to your WooCommerce store. You decide how 
 
 The plugin checks the cart when an item is added and again at checkout. If a rule is not met, the customer sees a notice explaining what to change, and checkout stays blocked until it is fixed.
 
-Source code and bug reports live on GitHub: https://github.com/wppoland/plogins-minimum
+Source code and bug reports live on GitHub: [github.com/wppoland/plogins-minimum](https://github.com/wppoland/plogins-minimum)
 
 What you can set up:
 
@@ -47,10 +47,10 @@ Other things worth knowing:
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/plogins-minimum/docs/
-* **Plugin page** - https://plogins.com/plogins-minimum/
-* **Source code** - https://github.com/wppoland/plogins-minimum
-* **Bug reports and feature requests** - https://github.com/wppoland/plogins-minimum/issues
+* **Documentation**: [plogins.com/plogins-minimum/docs/](https://plogins.com/plogins-minimum/docs/)
+* **Plugin page**: [plogins.com/plogins-minimum/](https://plogins.com/plogins-minimum/)
+* **Source code**: [github.com/wppoland/plogins-minimum](https://github.com/wppoland/plogins-minimum)
+* **Bug reports and feature requests**: [github.com/wppoland/plogins-minimum/issues](https://github.com/wppoland/plogins-minimum/issues)
 
 
 = Does it need WooCommerce? =
