@@ -25,7 +25,7 @@ namespace Minimum;
 
 defined( 'ABSPATH' ) || exit;
 
-const VERSION     = '1.0.4';
+const VERSION     = '1.0.5';
 const PLUGIN_FILE = __FILE__;
 const PLUGIN_DIR  = __DIR__;
 
