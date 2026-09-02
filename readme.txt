@@ -32,7 +32,7 @@ When more than one rule could apply to a product, the more specific one wins for
 Other things worth knowing:
 
 * Works with HPOS (custom order tables) and the Cart and Checkout blocks, as well as the classic cart and checkout. Validation reads the cart contents, so both layouts are covered.
-* Settings screen follows the WordPress admin style, respects the dark colour scheme, and labels every field for keyboard and screen-reader use.
+* Settings screen follows the WordPress admin style and labels every field for keyboard and screen-reader use.
 * No custom database tables. Deleting the plugin removes its two options and leaves the rest of your database untouched.
 * No bundled libraries or jQuery on the settings screen.
 
