@@ -1,11 +1,11 @@
-=== Minimum - Minimum Order for WooCommerce ===
+=== Plogins Minimum - Minimum Order for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, minimum order, quantity, order rules, minimum quantity
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -90,6 +90,9 @@ Minimum does not connect to any external services. Rules are evaluated against t
 Plogins Minimum is fully translatable and ships the `plogins-minimum.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.7 =
+* Renamed to Plogins Minimum - Minimum Order for WooCommerce so the name leads with the brand rather than a generic word, which is what the WordPress.org plugin review team asks for. The plugin slug is unchanged.
 
 = 1.0.6 =
 * Tested against WordPress 7.1. Verified by activating this build on a clean 7.1 install with WooCommerce 11.1, not by editing the header.
