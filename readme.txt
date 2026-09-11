@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,9 +39,9 @@ Other things worth knowing:
 == Installation ==
 
 1. Install and activate WooCommerce 8.0 or later.
-2. Upload the `plogins-minimum` folder to `/wp-content/plugins/`, or install the zip from the **Plugins → Add New → Upload Plugin** screen.
+2. Upload the `plogins-minimum` folder to `/wp-content/plugins/`, or install the zip from the **Plugins > Add New > Upload Plugin** screen.
 3. Activate the plugin through the **Plugins** screen.
-4. Go to **WooCommerce → Minimum** and add a rule (for example, a product with a minimum quantity of 3), or set a minimum order total.
+4. Go to **WooCommerce > Minimum** and add a rule (for example, a product with a minimum quantity of 3), or set a minimum order total.
 
 == Frequently Asked Questions ==
 
@@ -90,6 +90,10 @@ Minimum does not connect to any external services. Rules are evaluated against t
 Plogins Minimum is fully translatable and ships the `plogins-minimum.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.9 =
+* Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.
+* Fixed: arrow glyphs in the admin menu paths, and in the strings handed to translators. An arrow inside a translatable string makes the glyph every translator's problem and changes the layout in any locale that drops it.
 
 = 1.0.8 =
 * The translation template was regenerated. It still named an older version of the plugin and pointed at source lines that had since moved, which is what translation tools read to show a string in context.

@@ -39,9 +39,9 @@ Otras cosas que conviene saber:
 == Installation ==
 
 1. Instala y activa WooCommerce 8.0 o posterior.
-2. Sube la carpeta `plogins-minimum` a `/wp-content/plugins/` o instala el zip desde la pantalla <strong>Plugins → Añadir nuevo → Subir plugin</strong>.
+2. Sube la carpeta `plogins-minimum` a `/wp-content/plugins/` o instala el zip desde la pantalla <strong>Plugins > Añadir nuevo > Subir plugin</strong>.
 3. Activa el plugin desde la pantalla <strong>Plugins</strong>.
-4. Ve a <strong>WooCommerce → Minimum</strong> y añade una regla (por ejemplo, un producto con cantidad mínima 3) o define un total mínimo de pedido.
+4. Ve a <strong>WooCommerce > Minimum</strong> y añade una regla (por ejemplo, un producto con cantidad mínima 3) o define un total mínimo de pedido.
 
 == Frequently Asked Questions ==
 
