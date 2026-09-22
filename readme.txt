@@ -1,11 +1,11 @@
-=== Plogins Minimum - Minimum Order for WooCommerce ===
+=== Sojlo - Minimum Order for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, minimum order, quantity, order rules, minimum quantity
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.0.9
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ Set minimum, maximum and step quantity rules plus a minimum order total, enforce
 
 == Description ==
 
-Minimum adds quantity and spend rules to your WooCommerce store. You decide how many units of a product a customer has to buy, cap how many they may buy, sell in fixed pack sizes, and require a minimum order total before checkout is allowed. Rules can be set for a single product, a whole category, or every product at once.
+Sojlo adds quantity and spend rules to your WooCommerce store. You decide how many units of a product a customer has to buy, cap how many they may buy, sell in fixed pack sizes, and require a minimum order total before checkout is allowed. Rules can be set for a single product, a whole category, or every product at once.
 
 The plugin checks the cart when an item is added and again at checkout. If a rule is not met, the customer sees a notice explaining what to change, and checkout stays blocked until it is fixed.
 
@@ -39,9 +39,9 @@ Other things worth knowing:
 == Installation ==
 
 1. Install and activate WooCommerce 8.0 or later.
-2. Upload the `plogins-minimum` folder to `/wp-content/plugins/`, or install the zip from the **Plugins > Add New > Upload Plugin** screen.
+2. Upload the `sojlo` folder to `/wp-content/plugins/`, or install the zip from the **Plugins > Add New > Upload Plugin** screen.
 3. Activate the plugin through the **Plugins** screen.
-4. Go to **WooCommerce > Minimum** and add a rule (for example, a product with a minimum quantity of 3), or set a minimum order total.
+4. Go to **WooCommerce > Sojlo** and add a rule (for example, a product with a minimum quantity of 3), or set a minimum order total.
 
 == Frequently Asked Questions ==
 
@@ -54,7 +54,7 @@ Other things worth knowing:
 
 
 = Does it need WooCommerce? =
-Yes. Minimum is a WooCommerce extension and needs WooCommerce 8.0 or later active. If WooCommerce is missing, the plugin stays dormant and shows an admin notice.
+Yes. Sojlo is a WooCommerce extension and needs WooCommerce 8.0 or later active. If WooCommerce is missing, the plugin stays dormant and shows an admin notice.
 
 = What happens if two rules cover the same product? =
 Each value is resolved on its own. For min, max and step separately, a product rule overrides a category rule, which overrides the global rule. A field left at 0 means that value is not enforced.
@@ -83,13 +83,16 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 3. On a mobile device.
 == External Services ==
 
-Minimum does not connect to any external services. Rules are evaluated against the cart on your own server, and the only data stored is two WordPress options, `minimum_settings` (your rules and notice wording) and `minimum_db_version`. The plugin sends no email and creates no custom database tables.
+Sojlo does not connect to any external services. Rules are evaluated against the cart on your own server, and the only data stored is two WordPress options, `minimum_settings` (your rules and notice wording) and `minimum_db_version`. The plugin sends no email and creates no custom database tables.
 
 == Translations ==
 
-Plogins Minimum is fully translatable and ships the `plogins-minimum.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
+Sojlo is fully translatable and ships the `sojlo.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.0 =
+* Renamed to Sojlo. The WordPress.org review team asks a plugin name to lead with a distinctive, coined identifier rather than a generic descriptive word. Sojlo is Esperanto for a threshold. The text domain follows the name; the stored data, the settings and every hook are unchanged.
 
 = 1.0.9 =
 * Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.

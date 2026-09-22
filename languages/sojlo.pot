@@ -2,8 +2,8 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plogins Minimum - Minimum Order for WooCommerce 1.0.8\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-minimum\n"
+"Project-Id-Version: Sojlo - Minimum Order for WooCommerce 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sojlo\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,35 +12,35 @@ msgstr ""
 "POT-Creation-Date: 2026-09-09T14:37:53+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: plogins-minimum\n"
+"X-Domain: sojlo\n"
 
 #. Plugin Name of the plugin
-#: plogins-minimum.php
-msgid "Plogins Minimum - Minimum Order for WooCommerce"
+#: sojlo.php
+msgid "Sojlo - Minimum Order for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: plogins-minimum.php
+#: sojlo.php
 msgid "https://plogins.com/plogins-minimum/"
 msgstr ""
 
 #. Description of the plugin
-#: plogins-minimum.php
+#: sojlo.php
 msgid "Set minimum and maximum quantity and order-total rules, enforced at cart and checkout."
 msgstr ""
 
 #. Author of the plugin
-#: plogins-minimum.php
+#: sojlo.php
 msgid "WPPoland.com"
 msgstr ""
 
 #. Author URI of the plugin
-#: plogins-minimum.php
+#: sojlo.php
 msgid "https://wppoland.com"
 msgstr ""
 
-#: plogins-minimum.php:56
-msgid "Minimum - Order Quantity Rules for WooCommerce requires WooCommerce to be active."
+#: sojlo.php:56
+msgid "Sojlo - Minimum Order for WooCommerce requires WooCommerce to be active."
 msgstr ""
 
 #: src/Rules/Admin.php:76
@@ -48,11 +48,11 @@ msgid "Settings"
 msgstr ""
 
 #: src/Rules/Admin.php:90
-msgid "Minimum - Order Quantity Rules"
+msgid "Sojlo: minimum order rules"
 msgstr ""
 
 #: src/Rules/Admin.php:91
-msgid "Minimum"
+msgid "Sojlo"
 msgstr ""
 
 #: src/Rules/Admin.php:157
