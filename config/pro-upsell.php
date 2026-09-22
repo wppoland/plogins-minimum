@@ -10,7 +10,7 @@
 defined('ABSPATH') || exit;
 
 return [
-    'name'       => 'Minimum Pro',
+    'name'       => 'Sojlo Pro',
     'url'        => 'https://plogins.com/plogins-minimum-pro/pricing/',
     'sellable'   => true,
     'price_from' => 29,
