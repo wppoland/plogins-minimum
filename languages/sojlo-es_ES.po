@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plogins Minimum for WooCommerce 0.1.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/minimum\n"
-"POT-Creation-Date: 2026-06-16T20:24:08+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sojlo\n"
+"POT-Creation-Date: 2026-09-09T14:37:53+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:24:08+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
@@ -18,13 +18,13 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: sojlo.php
-msgid "Minimum - Order Quantity Rules for WooCommerce"
-msgstr "Mínimo: reglas de cantidad de pedido para WooCommerce"
+msgid "Sojlo - Minimum Order for WooCommerce"
+msgstr ""
 
 #. Plugin URI of the plugin
 #: sojlo.php
-msgid "https://plogins.com/minimum/"
-msgstr "https://plogins.com/es/minimum/"
+msgid "https://plogins.com/plogins-minimum/"
+msgstr ""
 
 #. Description of the plugin
 #: sojlo.php
@@ -37,71 +37,68 @@ msgstr ""
 
 #. Author of the plugin
 #: sojlo.php
-msgid "WPPoland"
-msgstr "WPPoland"
+msgid "WPPoland.com"
+msgstr ""
 
 #. Author URI of the plugin
 #: sojlo.php
-msgid "https://plogins.com/"
-msgstr "https://plogins.com/"
-
-#: sojlo.php:55
-msgid ""
-"Minimum - Order Quantity Rules for WooCommerce requires WooCommerce to be "
-"active."
+msgid "https://wppoland.com"
 msgstr ""
-"Mínimo: las reglas de cantidad de pedidos para WooCommerce requieren que "
-"WooCommerce esté activo."
 
-#: src/Rules/Admin.php:61
+#: sojlo.php:56
+msgid ""
+"Sojlo - Minimum Order for WooCommerce requires WooCommerce to be active."
+msgstr ""
+
+#: src/Rules/Admin.php:76
 msgid "Settings"
 msgstr "Ajustes"
 
-#: src/Rules/Admin.php:75
-msgid "Minimum - Order Quantity Rules"
-msgstr "Mínimo: reglas de cantidad de pedido"
+#: src/Rules/Admin.php:90
+msgid "Sojlo: minimum order rules"
+msgstr ""
 
-#: src/Rules/Admin.php:76
-msgid "Minimum"
-msgstr "Mínimo"
+#: src/Rules/Admin.php:91
+msgid "Sojlo"
+msgstr ""
 
-#: src/Rules/Admin.php:142 src/Rules/Admin.php:352
+#: src/Rules/Admin.php:157 src/Rules/Admin.php:372
 msgid "Remove"
 msgstr "Eliminar"
 
-#: src/Rules/Admin.php:143
+#: src/Rules/Admin.php:158
 msgid "Target ID"
 msgstr "ID de objetivo"
 
-#: src/Rules/Admin.php:144 src/Rules/Admin.php:243
+#: src/Rules/Admin.php:159 src/Rules/Admin.php:261
 msgid "Scope"
 msgstr "Alcance"
 
-#: src/Rules/Admin.php:145 src/Rules/Admin.php:245
+#: src/Rules/Admin.php:160 src/Rules/Admin.php:263
 msgid "Min"
 msgstr "mín."
 
-#: src/Rules/Admin.php:146 src/Rules/Admin.php:246
+#: src/Rules/Admin.php:161 src/Rules/Admin.php:264
 msgid "Max"
 msgstr "máx."
 
-#: src/Rules/Admin.php:147 src/Rules/Admin.php:247
+#: src/Rules/Admin.php:162 src/Rules/Admin.php:265
 msgid "Step"
 msgstr "Paso"
 
-#: src/Rules/Admin.php:160
+#: src/Rules/Admin.php:175
 msgid "All products (global)"
 msgstr "Todos los productos (globales)"
 
-#: src/Rules/Admin.php:161
+#: src/Rules/Admin.php:176
 msgid "Specific product"
 msgstr "Producto específico"
 
-#: src/Rules/Admin.php:162
+#: src/Rules/Admin.php:177
 msgid "Product category"
 msgstr "categoría de producto"
 
-#: src/Rules/Admin.php:182
+#: src/Rules/Admin.php:200
 msgid ""
 "Define quantity rules and a minimum order total. Rules are enforced when "
 "products are added to the cart and again at checkout, with clear notices "
@@ -112,15 +109,15 @@ msgstr ""
 "con avisos claros que bloquean el proceso de compra hasta que se cumplan "
 "todas las reglas."
 
-#: src/Rules/Admin.php:191
+#: src/Rules/Admin.php:209
 msgid "Enforcement"
 msgstr "Aplicación"
 
-#: src/Rules/Admin.php:201
+#: src/Rules/Admin.php:219
 msgid "Enforce quantity and order-total rules."
 msgstr "Haz cumplir las reglas de cantidad y total de pedidos."
 
-#: src/Rules/Admin.php:203
+#: src/Rules/Admin.php:221
 msgid ""
 "Master switch. Turn this off to keep your rules saved but stop enforcing "
 "them at the cart and checkout."
@@ -128,23 +125,23 @@ msgstr ""
 "Interruptor maestro. Desactiva esta opción para mantener tus reglas "
 "guardadas, pero deja de aplicarlas en el carrito y en la caja."
 
-#: src/Rules/Admin.php:209
+#: src/Rules/Admin.php:227
 msgid "Minimum order total"
 msgstr "Total mínimo del pedido"
 
-#: src/Rules/Admin.php:222
+#: src/Rules/Admin.php:240
 msgid ""
 "The smallest cart subtotal a customer can check out with. Set to 0 to "
 "disable the order-total rule."
 msgstr ""
-"El subtotal del carrito más pequeño que un cliente puede pagar. Establece "
-"en 0 para deshabilitar la regla del total del pedido."
+"El subtotal del carrito más pequeño que un cliente puede pagar. Establece en "
+"0 para deshabilitar la regla del total del pedido."
 
-#: src/Rules/Admin.php:228
+#: src/Rules/Admin.php:246
 msgid "Quantity rules"
 msgstr "Reglas de cantidad"
 
-#: src/Rules/Admin.php:230
+#: src/Rules/Admin.php:248
 msgid ""
 "Each rule sets a floor, a ceiling and a step for how many units a customer "
 "can buy. When several rules could apply, the most specific one wins: a "
@@ -157,11 +154,11 @@ msgstr ""
 "categoría, que a su vez supera a la regla global. Deja cualquier campo en 0 "
 "para ignorar esa restricción."
 
-#: src/Rules/Admin.php:235
+#: src/Rules/Admin.php:253
 msgid "No rules yet. Add your first quantity rule below."
 msgstr "Aún no hay reglas. Añade tu primera regla de cantidad a continuación."
 
-#: src/Rules/Admin.php:239
+#: src/Rules/Admin.php:257
 msgid ""
 "Floor (min), ceiling (max) and step apply per scope. To target a single "
 "product or a category, paste its numeric ID, open the product or category in "
@@ -173,7 +170,7 @@ msgstr ""
 "numérico, abre el producto o la categoría en el editor y lee el ID de la "
 "entrada o del término desde la URL (el número post= o tag_ID=)."
 
-#: src/Rules/Admin.php:243
+#: src/Rules/Admin.php:261
 msgid ""
 "Which products this rule covers: every product, one product, or a whole "
 "category."
@@ -181,7 +178,7 @@ msgstr ""
 "Qué productos cubre esta regla: cada producto, un producto o una categoría "
 "completa."
 
-#: src/Rules/Admin.php:244
+#: src/Rules/Admin.php:262
 msgid ""
 "The numeric ID of the product or category this rule targets. Ignored for the "
 "global scope."
@@ -189,23 +186,23 @@ msgstr ""
 "El ID numérico del producto o categoría al que se dirige esta regla. "
 "Ignorado para el ámbito global."
 
-#: src/Rules/Admin.php:244
+#: src/Rules/Admin.php:262
 msgid "Product / Category ID"
 msgstr "ID de producto/categoría"
 
-#: src/Rules/Admin.php:245
+#: src/Rules/Admin.php:263
 msgid "Floor: customers must buy at least this many. 0 sets no floor."
 msgstr ""
 "Mínimo: los clientes deben comprar al menos esta cantidad. 0 no establece "
 "ningún mínimo."
 
-#: src/Rules/Admin.php:246
+#: src/Rules/Admin.php:264
 msgid "Ceiling: customers can buy at most this many. 0 sets no ceiling."
 msgstr ""
 "Máximo: los clientes pueden comprar como máximo esta cantidad. 0 no "
 "establece ningún máximo."
 
-#: src/Rules/Admin.php:247
+#: src/Rules/Admin.php:265
 msgid ""
 "Quantity must be a multiple of this number, e.g. 6 forces 6, 12, 18. 0 or 1 "
 "allows any amount."
@@ -213,19 +210,19 @@ msgstr ""
 "La cantidad debe ser un múltiplo de este número, p.e. 6 fuerza a 6, 12, 18. "
 "0 o 1 permite cualquier cantidad."
 
-#: src/Rules/Admin.php:248
+#: src/Rules/Admin.php:266
 msgid "Actions"
 msgstr "Acciones"
 
-#: src/Rules/Admin.php:259
+#: src/Rules/Admin.php:277
 msgid "+ Add rule"
 msgstr "+ Añadir regla"
 
-#: src/Rules/Admin.php:264
+#: src/Rules/Admin.php:282
 msgid "Notice messages"
 msgstr "Mensajes de aviso"
 
-#: src/Rules/Admin.php:266
+#: src/Rules/Admin.php:284
 msgid ""
 "Shown to a customer when a rule is not met. Each {token} is swapped for the "
 "live value at checkout, so the message names the exact product and number."
@@ -235,69 +232,148 @@ msgstr ""
 "mensaje indica el producto y el número exactos."
 
 #. translators: 1: template with tokens, 2: the same message after tokens are filled in.
-#: src/Rules/Admin.php:272
+#: src/Rules/Admin.php:290
 #, php-format
 msgid "Example: %1$s becomes %2$s"
 msgstr "Ejemplo: %1$s se convierte en %2$s"
 
-#: src/Rules/Admin.php:273 src/Rules/Settings.php:53
+#: src/Rules/Admin.php:291 src/Rules/Settings.php:54
 msgid "You must buy at least {min} of \"{product}\"."
 msgstr "Debes comprar al menos {min} de \"{product}\"."
 
-#: src/Rules/Admin.php:274
+#: src/Rules/Admin.php:292
 msgid "You must buy at least 6 of \"Espresso Beans\"."
 msgstr "Debes comprar al menos 6 de \"Espresso Beans\"."
 
-#: src/Rules/Admin.php:282
+#: src/Rules/Admin.php:300
 msgid "Below minimum quantity"
 msgstr "Por debajo de la cantidad mínima"
 
-#: src/Rules/Admin.php:283
+#: src/Rules/Admin.php:301
 msgid "Above maximum quantity"
 msgstr "Por encima de la cantidad máxima"
 
-#: src/Rules/Admin.php:284
+#: src/Rules/Admin.php:302
 msgid "Invalid step quantity"
 msgstr "Cantidad de pasos no válida"
 
-#: src/Rules/Admin.php:285
+#: src/Rules/Admin.php:303
 msgid "Below minimum order total"
 msgstr "Por debajo del total mínimo del pedido"
 
-#: src/Rules/Admin.php:311
+#: src/Rules/Admin.php:331
 msgid "Rule scope"
 msgstr "Alcance de la regla"
 
-#: src/Rules/Admin.php:328
+#: src/Rules/Admin.php:348
 msgid "Target product or category ID"
 msgstr "ID de categoría o producto de destino"
 
-#: src/Rules/Admin.php:336
+#: src/Rules/Admin.php:356
 msgid "Minimum quantity"
 msgstr "Cantidad mínima"
 
-#: src/Rules/Admin.php:342
+#: src/Rules/Admin.php:362
 msgid "Maximum quantity"
 msgstr "Cantidad máxima"
 
-#: src/Rules/Admin.php:348
+#: src/Rules/Admin.php:368
 msgid "Step quantity"
 msgstr "Cantidad de pasos"
 
 #. translators: %s: list of available replacement tokens.
-#: src/Rules/Admin.php:386
+#: src/Rules/Admin.php:406
 #, php-format
 msgid "Available tokens: %s"
 msgstr "Tokens disponibles: %s"
 
-#: src/Rules/Settings.php:54
+#: src/Rules/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr ""
+
+#: src/Rules/ProUpsell.php:78
+msgid "Coming soon"
+msgstr ""
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Rules/ProUpsell.php:84
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr ""
+
+#: src/Rules/ProUpsell.php:93
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: src/Rules/ProUpsell.php:94
+msgid "Powiadom mnie"
+msgstr ""
+
+#: src/Rules/ProUpsell.php:94
+msgid "Get notified"
+msgstr ""
+
+#: src/Rules/ProUpsell.php:124
+msgid "Permission denied."
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Rules/ProUpsell.php:154
+#, php-format
+msgid "Do more with %s"
+msgstr ""
+
+#: src/Rules/ProUpsell.php:161
+msgid "Dismiss this notice"
+msgstr ""
+
+#: src/Rules/ProUpsell.php:178
+msgid "Unlock every PRO feature"
+msgstr ""
+
+#: src/Rules/ProUpsell.php:191
+msgid "one licence, every PRO feature"
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Rules/ProUpsell.php:210
+#, php-format
+msgid "What %s adds"
+msgstr ""
+
+#: src/Rules/Settings.php:55
 msgid "You can buy at most {max} of \"{product}\"."
 msgstr "Puedes comprar como máximo {max} de \"{product}\"."
 
-#: src/Rules/Settings.php:55
+#: src/Rules/Settings.php:56
 msgid "\"{product}\" must be bought in multiples of {step}."
 msgstr "\"{product}\" debe comprarse en múltiplos de {step}."
 
-#: src/Rules/Settings.php:56
+#: src/Rules/Settings.php:57
 msgid "Your order total must be at least {min} (currently {total})."
 msgstr "El total de tu pedido debe ser al menos {min} (actualmente {total})."
+
+#~ msgid "Minimum - Order Quantity Rules for WooCommerce"
+#~ msgstr "Mínimo: reglas de cantidad de pedido para WooCommerce"
+
+#~ msgid "https://plogins.com/minimum/"
+#~ msgstr "https://plogins.com/es/minimum/"
+
+#~ msgid "WPPoland"
+#~ msgstr "WPPoland"
+
+#~ msgid "https://plogins.com/"
+#~ msgstr "https://plogins.com/"
+
+#~ msgid ""
+#~ "Minimum - Order Quantity Rules for WooCommerce requires WooCommerce to be "
+#~ "active."
+#~ msgstr ""
+#~ "Mínimo: las reglas de cantidad de pedidos para WooCommerce requieren que "
+#~ "WooCommerce esté activo."
+
+#~ msgid "Minimum - Order Quantity Rules"
+#~ msgstr "Mínimo: reglas de cantidad de pedido"
+
+#~ msgid "Minimum"
+#~ msgstr "Mínimo"
