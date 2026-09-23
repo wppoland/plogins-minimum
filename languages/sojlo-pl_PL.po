@@ -20,12 +20,12 @@ msgstr ""
 #. Plugin Name of the plugin
 #: sojlo.php
 msgid "Sojlo - Minimum Order for WooCommerce"
-msgstr ""
+msgstr "Sojlo - minimalne zamówienie dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: sojlo.php
 msgid "https://plogins.com/plogins-minimum/"
-msgstr ""
+msgstr "https://plogins.com/plogins-minimum/"
 
 #. Description of the plugin
 #: sojlo.php
@@ -39,17 +39,17 @@ msgstr ""
 #. Author of the plugin
 #: sojlo.php
 msgid "WPPoland.com"
-msgstr ""
+msgstr "WPPoland.com"
 
 #. Author URI of the plugin
 #: sojlo.php
 msgid "https://wppoland.com"
-msgstr ""
+msgstr "https://wppoland.com"
 
 #: sojlo.php:56
 msgid ""
 "Sojlo - Minimum Order for WooCommerce requires WooCommerce to be active."
-msgstr ""
+msgstr "Sojlo - minimalne zamówienie dla WooCommerce wymaga aktywnego WooCommerce."
 
 #: src/Rules/Admin.php:76
 msgid "Settings"
@@ -57,11 +57,11 @@ msgstr "Ustawienia"
 
 #: src/Rules/Admin.php:90
 msgid "Sojlo: minimum order rules"
-msgstr ""
+msgstr "Sojlo: reguły minimalnego zamówienia"
 
 #: src/Rules/Admin.php:91
 msgid "Sojlo"
-msgstr ""
+msgstr "Sojlo"
 
 #: src/Rules/Admin.php:157 src/Rules/Admin.php:372
 msgid "Remove"
@@ -289,57 +289,57 @@ msgstr "Dostępne symbole zastępcze: %s"
 
 #: src/Rules/ProUpsell.php:78
 msgid "Wkrótce"
-msgstr ""
+msgstr "Wkrótce"
 
 #: src/Rules/ProUpsell.php:78
 msgid "Coming soon"
-msgstr ""
+msgstr "Wkrótce"
 
 #. translators: 1: currency symbol, 2: yearly price
 #: src/Rules/ProUpsell.php:84
 #, php-format
 msgid "from %1$s%2$d/yr"
-msgstr ""
+msgstr "od %1$s%2$d/rok"
 
 #: src/Rules/ProUpsell.php:93
 msgid "Upgrade to PRO"
-msgstr ""
+msgstr "Przejdź na PRO"
 
 #: src/Rules/ProUpsell.php:94
 msgid "Powiadom mnie"
-msgstr ""
+msgstr "Powiadom mnie"
 
 #: src/Rules/ProUpsell.php:94
 msgid "Get notified"
-msgstr ""
+msgstr "Powiadom mnie"
 
 #: src/Rules/ProUpsell.php:124
 msgid "Permission denied."
-msgstr ""
+msgstr "Brak uprawnień."
 
 #. translators: %s: PRO edition name
 #: src/Rules/ProUpsell.php:154
 #, php-format
 msgid "Do more with %s"
-msgstr ""
+msgstr "Zrób więcej dzięki %s"
 
 #: src/Rules/ProUpsell.php:161
 msgid "Dismiss this notice"
-msgstr ""
+msgstr "Odrzuć to powiadomienie"
 
 #: src/Rules/ProUpsell.php:178
 msgid "Unlock every PRO feature"
-msgstr ""
+msgstr "Odblokuj wszystkie funkcje PRO"
 
 #: src/Rules/ProUpsell.php:191
 msgid "one licence, every PRO feature"
-msgstr ""
+msgstr "jedna licencja, wszystkie funkcje PRO"
 
 #. translators: %s: PRO edition name
 #: src/Rules/ProUpsell.php:210
 #, php-format
 msgid "What %s adds"
-msgstr ""
+msgstr "Co dodaje %s"
 
 #: src/Rules/Settings.php:55
 msgid "You can buy at most {max} of \"{product}\"."
