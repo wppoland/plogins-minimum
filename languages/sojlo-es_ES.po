@@ -32,7 +32,7 @@ msgid ""
 "Set minimum and maximum quantity and order-total rules, enforced at cart and "
 "checkout."
 msgstr ""
-"Establezca reglas de cantidad mínima y máxima y total del pedido, que se "
+"Establece reglas de cantidad mínima y máxima y total del pedido, que se "
 "aplicarán en el carrito y en el momento del pago."
 
 #. Author of the plugin
@@ -107,7 +107,7 @@ msgid ""
 "products are added to the cart and again at checkout, with clear notices "
 "that block checkout until every rule is satisfied."
 msgstr ""
-"Defina reglas de cantidad y un total mínimo de pedido. Las reglas se aplican "
+"Define reglas de cantidad y un total mínimo de pedido. Las reglas se aplican "
 "cuando se agregan productos al carrito y nuevamente al finalizar la compra, "
 "con avisos claros que bloquean el proceso de compra hasta que se cumplan "
 "todas las reglas."
@@ -118,15 +118,15 @@ msgstr "Aplicación"
 
 #: src/Rules/Admin.php:201
 msgid "Enforce quantity and order-total rules."
-msgstr "Haga cumplir las reglas de cantidad y total de pedidos."
+msgstr "Haz cumplir las reglas de cantidad y total de pedidos."
 
 #: src/Rules/Admin.php:203
 msgid ""
 "Master switch. Turn this off to keep your rules saved but stop enforcing "
 "them at the cart and checkout."
 msgstr ""
-"Interruptor maestro. Desactive esta opción para mantener sus reglas "
-"guardadas, pero deje de aplicarlas en el carrito y en la caja."
+"Interruptor maestro. Desactiva esta opción para mantener tus reglas "
+"guardadas, pero deja de aplicarlas en el carrito y en la caja."
 
 #: src/Rules/Admin.php:209
 msgid "Minimum order total"
@@ -137,7 +137,7 @@ msgid ""
 "The smallest cart subtotal a customer can check out with. Set to 0 to "
 "disable the order-total rule."
 msgstr ""
-"El subtotal del carrito más pequeño que un cliente puede pagar. Establezca "
+"El subtotal del carrito más pequeño que un cliente puede pagar. Establece "
 "en 0 para deshabilitar la regla del total del pedido."
 
 #: src/Rules/Admin.php:228
@@ -154,12 +154,12 @@ msgstr ""
 "Cada regla establece un mínimo, un máximo y un incremento para la cantidad "
 "de unidades que puede comprar un cliente. Cuando se pueden aplicar varias "
 "reglas, gana la más específica: una regla de producto supera a una regla de "
-"categoría, que a su vez supera a la regla global. Deje cualquier campo en 0 "
+"categoría, que a su vez supera a la regla global. Deja cualquier campo en 0 "
 "para ignorar esa restricción."
 
 #: src/Rules/Admin.php:235
 msgid "No rules yet. Add your first quantity rule below."
-msgstr "Aún no hay reglas. Añade su primera regla de cantidad a continuación."
+msgstr "Aún no hay reglas. Añade tu primera regla de cantidad a continuación."
 
 #: src/Rules/Admin.php:239
 msgid ""
@@ -169,8 +169,8 @@ msgid ""
 "number)."
 msgstr ""
 "El mínimo (mín.), el máximo (máx.) y el incremento se aplican según el "
-"ámbito. Para aplicar la regla a un solo producto o categoría, pegue su ID "
-"numérico, abra el producto o la categoría en el editor y lea el ID de la "
+"ámbito. Para aplicar la regla a un solo producto o categoría, pega su ID "
+"numérico, abre el producto o la categoría en el editor y lee el ID de la "
 "entrada o del término desde la URL (el número post= o tag_ID=)."
 
 #: src/Rules/Admin.php:243
@@ -300,4 +300,4 @@ msgstr "\"{product}\" debe comprarse en múltiplos de {step}."
 
 #: src/Rules/Settings.php:56
 msgid "Your order total must be at least {min} (currently {total})."
-msgstr "El total de su pedido debe ser al menos {min} (actualmente {total})."
+msgstr "El total de tu pedido debe ser al menos {min} (actualmente {total})."
