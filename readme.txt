@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -90,6 +90,10 @@ Sojlo does not connect to any external services. Rules are evaluated against the
 Sojlo is fully translatable and ships the `sojlo.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.1 =
+* The settings screen is reachable by a shop manager, but saving it went through options.php, which checks manage_options. A shop manager could fill the form in and be told they were not allowed to manage options for this site. Saving now uses the same capability as the menu.
+* The sidebar upgrade promo follows the banner's dismissal, so dismissing it no longer leaves a permanent advert on the screen.
 
 = 1.1.0 =
 * Renamed to Sojlo. The WordPress.org review team asks a plugin name to lead with a distinctive, coined identifier rather than a generic descriptive word. Sojlo is Esperanto for a threshold. The text domain follows the name; the stored data, the settings and every hook are unchanged.
