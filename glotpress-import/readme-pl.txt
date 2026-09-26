@@ -39,9 +39,9 @@ Inne rzeczy, o których warto wiedzieć:
 == Installation ==
 
 1. Zainstaluj i włącz WooCommerce 8.0 lub nowszy.
-2. Prześlij folder `plogins-minimum` do `/wp-content/plugins/` lub zainstaluj archiwum zip z ekranu <strong>Wtyczki → Dodaj nową → Prześlij wtyczkę</strong>.
+2. Prześlij folder `plogins-minimum` do `/wp-content/plugins/` lub zainstaluj archiwum zip z ekranu <strong>Wtyczki > Dodaj nową > Prześlij wtyczkę</strong>.
 3. Włącz wtyczkę na ekranie <strong>Wtyczki</strong>.
-4. Przejdź do <strong>WooCommerce → Minimum</strong> i dodaj regułę (na przykład produkt z minimalną ilością 3) albo ustaw minimalną sumę zamówienia.
+4. Przejdź do <strong>WooCommerce > Minimum</strong> i dodaj regułę (na przykład produkt z minimalną ilością 3) albo ustaw minimalną sumę zamówienia.
 
 == Frequently Asked Questions ==
 
