@@ -86,7 +86,7 @@ final class RulesRepository {
 		/**
 		 * Filters the resolved min/max/step constraints for a product.
 		 *
-		 * Add-ons (e.g. Minimum Pro) use this to layer per-product overrides on
+		 * Add-ons (e.g. Sojlo Pro) use this to layer per-product overrides on
 		 * top of the global/category/product rules resolved above. Returned
 		 * values must keep the array{min: int, max: int, step: int} shape.
 		 *
