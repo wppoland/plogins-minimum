@@ -36,6 +36,32 @@ Other things worth knowing:
 * No custom database tables. Deleting the plugin removes its two options and leaves the rest of your database untouched.
 * No bundled libraries or jQuery on the settings screen.
 
+== Sojlo Pro ==
+
+Sojlo Pro is a separate paid plugin that extends Sojlo.
+
+Included in Sojlo:
+
+* Minimum quantity
+* Maximum quantity
+* Step quantity
+* Minimum order total
+* Rule precedence
+
+Sojlo Pro adds:
+
+* Rules on the product editor
+* Per-role rules
+* Scheduled rules
+* Bulk import
+* Conditional rules
+
+The free edition is not a trial and its features stay available without a time limit.
+
+* **Sojlo Pro** - [plogins.com/plogins-minimum-pro/](https://plogins.com/plogins-minimum-pro/)
+* **Compare editions and pricing** - [plogins.com/plogins-minimum-pro/pricing/](https://plogins.com/plogins-minimum-pro/pricing/)
+* **PRO documentation** - [plogins.com/plogins-minimum-pro/docs/](https://plogins.com/plogins-minimum-pro/docs/)
+
 == Installation ==
 
 1. Install and activate WooCommerce 8.0 or later.
