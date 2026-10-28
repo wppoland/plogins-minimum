@@ -4,14 +4,14 @@
  * scripts/gen-pro-upsell.mjs. The admin upsell renders this; curate the
  * feature list to fit this plugin's settings screen (do not invent features).
  *
- * @package plogins-minimum-pro
+ * @package sojlo-pro
  */
 
 defined('ABSPATH') || exit;
 
 return [
     'name'       => 'Sojlo Pro',
-    'url'        => 'https://plogins.com/plogins-minimum-pro/pricing/',
+    'url'        => 'https://plogins.com/sojlo-pro/pricing/',
     'sellable'   => true,
     'price_from' => 29,
     'currency'   => 'EUR',

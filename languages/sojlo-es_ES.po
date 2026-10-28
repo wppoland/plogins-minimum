@@ -23,8 +23,8 @@ msgstr "Sojlo - Pedido mínimo para WooCommerce"
 
 #. Plugin URI of the plugin
 #: sojlo.php
-msgid "https://plogins.com/plogins-minimum/"
-msgstr "https://plogins.com/plogins-minimum/"
+msgid "https://plogins.com/sojlo/"
+msgstr "https://plogins.com/sojlo/"
 
 #. Description of the plugin
 #: sojlo.php
