@@ -5,7 +5,7 @@ Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
 Requires Plugins: woocommerce
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,7 +17,7 @@ Sojlo adds quantity and spend rules to your WooCommerce store. You decide how ma
 
 The plugin checks the cart when an item is added and again at checkout. If a rule is not met, the customer sees a notice explaining what to change, and checkout stays blocked until it is fixed.
 
-Source code and bug reports live on GitHub: [github.com/wppoland/plogins-minimum](https://github.com/wppoland/plogins-minimum)
+Source code and bug reports live on GitHub: [github.com/wppoland/sojlo](https://github.com/wppoland/sojlo)
 
 What you can set up:
 
@@ -58,9 +58,9 @@ Sojlo Pro adds:
 
 The free edition is not a trial and its features stay available without a time limit.
 
-* **Sojlo Pro** - [plogins.com/plogins-minimum-pro/](https://plogins.com/plogins-minimum-pro/)
-* **Compare editions and pricing** - [plogins.com/plogins-minimum-pro/pricing/](https://plogins.com/plogins-minimum-pro/pricing/)
-* **PRO documentation** - [plogins.com/plogins-minimum-pro/docs/](https://plogins.com/plogins-minimum-pro/docs/)
+* **Sojlo Pro** - [plogins.com/sojlo-pro/](https://plogins.com/sojlo-pro/)
+* **Compare editions and pricing** - [plogins.com/sojlo-pro/pricing/](https://plogins.com/sojlo-pro/pricing/)
+* **PRO documentation** - [plogins.com/sojlo-pro/docs/](https://plogins.com/sojlo-pro/docs/)
 
 == Installation ==
 
@@ -73,10 +73,10 @@ The free edition is not a trial and its features stay available without a time l
 
 = Documentation and links =
 
-* **Documentation**: [plogins.com/plogins-minimum/docs/](https://plogins.com/plogins-minimum/docs/)
-* **Plugin page**: [plogins.com/plogins-minimum/](https://plogins.com/plogins-minimum/)
-* **Source code**: [github.com/wppoland/plogins-minimum](https://github.com/wppoland/plogins-minimum)
-* **Bug reports and feature requests**: [github.com/wppoland/plogins-minimum/issues](https://github.com/wppoland/plogins-minimum/issues)
+* **Documentation**: [plogins.com/sojlo/docs/](https://plogins.com/sojlo/docs/)
+* **Plugin page**: [plogins.com/sojlo/](https://plogins.com/sojlo/)
+* **Source code**: [github.com/wppoland/sojlo](https://github.com/wppoland/sojlo)
+* **Bug reports and feature requests**: [github.com/wppoland/sojlo/issues](https://github.com/wppoland/sojlo/issues)
 
 
 = Does it need WooCommerce? =
@@ -116,6 +116,9 @@ Sojlo does not connect to any external services. Rules are evaluated against the
 Sojlo is fully translatable and ships the `sojlo.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.3 =
+* Links point at the new plogins.com address and the renamed GitHub repository.
 
 = 1.1.2 =
 * The upgrade notice's "Coming soon" and "Get notified" labels are English source strings for every language; Polish sites used to get their own Polish source text, which translators in other languages then saw untranslated.
