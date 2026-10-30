@@ -3,7 +3,7 @@
  * Plugin Name:       Sojlo - Minimum Order for WooCommerce
  * Plugin URI:        https://plogins.com/sojlo/
  * Description:        Set minimum and maximum quantity and order-total rules, enforced at cart and checkout.
- * Version:           1.1.3
+ * Version:           1.1.4
  * Requires at least: 6.5
  * Requires PHP:      8.1
  * Requires Plugins:  woocommerce
@@ -25,7 +25,7 @@ namespace Minimum;
 
 defined( 'ABSPATH' ) || exit;
 
-const VERSION     = '1.1.3';
+const VERSION     = '1.1.4';
 const PLUGIN_FILE = __FILE__;
 const PLUGIN_DIR  = __DIR__;
 
